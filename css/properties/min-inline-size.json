@@ -8,6 +8,9 @@
             "https://drafts.csswg.org/css-logical/#propdef-min-inline-size",
             "https://drafts.csswg.org/css-sizing-4/#sizing-values"
           ],
+          "tags": [
+            "web-features:logical-properties"
+          ],
           "support": {
             "chrome": {
               "version_added": "57"
@@ -29,7 +32,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -39,7 +43,7 @@
         },
         "anchor-size": {
           "__compat": {
-            "description": "<code>anchor-size()</code>",
+            "description": "`anchor-size()`",
             "spec_url": "https://drafts.csswg.org/css-anchor-position-1/#anchor-size-fn",
             "tags": [
               "web-features:anchor-positioning"
@@ -51,7 +55,8 @@
               "chrome_android": "mirror",
               "edge": "mirror",
               "firefox": {
-                "version_added": false
+                "version_added": false,
+                "impl_url": "https://bugzil.la/1838746"
               },
               "firefox_android": "mirror",
               "ie": {
@@ -65,7 +70,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -76,7 +82,9 @@
         },
         "fit-content": {
           "__compat": {
-            "description": "<code>fit-content</code>",
+            "tags": [
+              "web-features:logical-properties"
+            ],
             "support": {
               "chrome": {
                 "version_added": "57"
@@ -107,7 +115,8 @@
                 "alternative_name": "-webkit-fill-available",
                 "version_added": "7.0"
               },
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -118,7 +127,10 @@
         },
         "fit-content_function": {
           "__compat": {
-            "description": "<code>fit-content()</code>",
+            "description": "`fit-content()`",
+            "tags": [
+              "web-features:fit-content-function"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -146,7 +158,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -157,7 +170,9 @@
         },
         "max-content": {
           "__compat": {
-            "description": "<code>max-content</code>",
+            "tags": [
+              "web-features:logical-properties"
+            ],
             "support": {
               "chrome": {
                 "version_added": "57"
@@ -185,7 +200,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -196,7 +212,9 @@
         },
         "min-content": {
           "__compat": {
-            "description": "<code>min-content</code>",
+            "tags": [
+              "web-features:logical-properties"
+            ],
             "support": {
               "chrome": {
                 "version_added": "57"
@@ -224,7 +242,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
