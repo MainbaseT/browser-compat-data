@@ -12,6 +12,15 @@
             "version_added": "97"
           },
           "chrome_android": "mirror",
+          "deno": {
+            "version_added": "2.2",
+            "flags": [
+              {
+                "type": "runtime_flag",
+                "name": "--unstable-net"
+              }
+            ]
+          },
           "edge": "mirror",
           "firefox": {
             "version_added": "114"
@@ -28,7 +37,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -39,11 +49,23 @@
       "byob_readers": {
         "__compat": {
           "description": "BYOB reader support",
+          "tags": [
+            "web-features:webtransport"
+          ],
           "support": {
             "chrome": {
               "version_added": "109"
             },
             "chrome_android": "mirror",
+            "deno": {
+              "version_added": "2.2",
+              "flags": [
+                {
+                  "type": "runtime_flag",
+                  "name": "--unstable-net"
+                }
+              ]
+            },
             "edge": "mirror",
             "firefox": {
               "version_added": false
@@ -60,7 +82,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -81,6 +104,15 @@
               "version_added": "97"
             },
             "chrome_android": "mirror",
+            "deno": {
+              "version_added": "2.2",
+              "flags": [
+                {
+                  "type": "runtime_flag",
+                  "name": "--unstable-net"
+                }
+              ]
+            },
             "edge": "mirror",
             "firefox": {
               "version_added": "114"
@@ -97,7 +129,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -118,6 +151,15 @@
               "version_added": "97"
             },
             "chrome_android": "mirror",
+            "deno": {
+              "version_added": "2.2",
+              "flags": [
+                {
+                  "type": "runtime_flag",
+                  "name": "--unstable-net"
+                }
+              ]
+            },
             "edge": "mirror",
             "firefox": {
               "version_added": "114"
@@ -134,7 +176,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -155,6 +198,15 @@
               "version_added": "97"
             },
             "chrome_android": "mirror",
+            "deno": {
+              "version_added": "2.2",
+              "flags": [
+                {
+                  "type": "runtime_flag",
+                  "name": "--unstable-net"
+                }
+              ]
+            },
             "edge": "mirror",
             "firefox": {
               "version_added": "114"
@@ -171,7 +223,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -192,6 +245,15 @@
               "version_added": "97"
             },
             "chrome_android": "mirror",
+            "deno": {
+              "version_added": "2.2",
+              "flags": [
+                {
+                  "type": "runtime_flag",
+                  "name": "--unstable-net"
+                }
+              ]
+            },
             "edge": "mirror",
             "firefox": {
               "version_added": "114"
@@ -208,7 +270,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -229,6 +292,15 @@
               "version_added": "97"
             },
             "chrome_android": "mirror",
+            "deno": {
+              "version_added": "2.2",
+              "flags": [
+                {
+                  "type": "runtime_flag",
+                  "name": "--unstable-net"
+                }
+              ]
+            },
             "edge": "mirror",
             "firefox": {
               "version_added": "114"
@@ -245,7 +317,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -266,6 +339,15 @@
               "version_added": "97"
             },
             "chrome_android": "mirror",
+            "deno": {
+              "version_added": "2.2",
+              "flags": [
+                {
+                  "type": "runtime_flag",
+                  "name": "--unstable-net"
+                }
+              ]
+            },
             "edge": "mirror",
             "firefox": {
               "version_added": "114"
@@ -282,7 +364,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -303,6 +386,15 @@
               "version_added": "97"
             },
             "chrome_android": "mirror",
+            "deno": {
+              "version_added": "2.2",
+              "flags": [
+                {
+                  "type": "runtime_flag",
+                  "name": "--unstable-net"
+                }
+              ]
+            },
             "edge": "mirror",
             "firefox": {
               "version_added": "114"
@@ -319,7 +411,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

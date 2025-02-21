@@ -5,6 +5,7 @@ import yargs from 'yargs';
 import { updateChromiumReleases } from './chrome.js';
 import { updateEdgeReleases } from './edge.js';
 import { updateFirefoxReleases } from './firefox.js';
+import { updateOperaReleases } from './opera.js';
 import { updateSafariReleases } from './safari.js';
 
 const argv = yargs(process.argv.slice(2))
@@ -26,6 +27,11 @@ const argv = yargs(process.argv.slice(2))
   })
   .option('firefox', {
     describe: 'Update Mozilla Firefox',
+    type: 'boolean',
+    group: 'Engine selection:',
+  })
+  .option('opera', {
+    describe: 'Update Opera',
     type: 'boolean',
     group: 'Engine selection:',
   })
@@ -65,12 +71,14 @@ const updateAllBrowsers =
     argv['webview'] ||
     argv['firefox'] ||
     argv['edge'] ||
+    argv['opera'] ||
     argv['safari']
   );
 const updateChrome = argv['chrome'] || updateAllBrowsers;
 const updateWebview = argv['webview'] || updateAllBrowsers;
 const updateFirefox = argv['firefox'] || updateAllBrowsers;
 const updateEdge = argv['edge'] || updateAllBrowsers;
+const updateOpera = argv['opera'] || updateAllBrowsers;
 const updateSafari = argv['safari'] || updateAllBrowsers;
 const updateAllDevices =
   argv['alldevices'] || !(argv['mobile'] || argv['desktop']);
@@ -85,7 +93,7 @@ const options = {
     browserEngine: 'Blink',
     releaseBranch: 'stable',
     betaBranch: 'beta',
-    nightlyBranch: 'canary',
+    nightlyBranch: 'dev',
     releaseNoteCore: 'stable-channel-update-for-desktop',
     firstRelease: 1,
     skippedReleases: [82], // 82 was skipped during COVID
@@ -98,7 +106,7 @@ const options = {
     browserEngine: 'Blink',
     releaseBranch: 'stable',
     betaBranch: 'beta',
-    nightlyBranch: 'canary',
+    nightlyBranch: 'dev',
     releaseNoteCore: 'chrome-for-android-update',
     firstRelease: 25,
     skippedReleases: [82], // 82 was skipped during COVID
@@ -111,7 +119,7 @@ const options = {
     browserEngine: 'Blink',
     releaseBranch: 'stable',
     betaBranch: 'beta',
-    nightlyBranch: 'canary',
+    nightlyBranch: 'dev',
     releaseNoteCore: 'chrome-for-android-update',
     firstRelease: 37,
     skippedReleases: [82], // 82 was skipped during COVID
@@ -163,6 +171,25 @@ const options = {
     firefoxScheduleURL:
       'https://whattrainisitnow.com/api/release/schedule/?version=',
   },
+  opera_desktop: {
+    browserName: 'Opera for Desktop',
+    bcdFile: './browsers/opera.json',
+    bcdBrowserName: 'opera',
+    skippedReleases: [],
+    releaseFeedURL: 'https://blogs.opera.com/desktop/category/stable-2/feed/',
+    titleVersionPattern: /^Opera (\d+)$/,
+    descriptionEngineVersionPattern: /Chromium (\d+)/,
+  },
+  opera_android: {
+    browserName: 'Opera for Android',
+    bcdFile: './browsers/opera_android.json',
+    bcdBrowserName: 'opera_android',
+    skippedReleases: [],
+    releaseFeedURL: 'https://forums.opera.com/category/20.rss',
+    releaseFilterCreator: ['abitkulova'],
+    titleVersionPattern: /^Opera for Android (\d+)$/,
+    descriptionEngineVersionPattern: /Chromium (\d+)/,
+  },
   safari_desktop: {
     browserName: 'Safari for Desktop',
     bcdFile: './browsers/safari.json',
@@ -176,6 +203,15 @@ const options = {
     browserName: 'Safari for iOS',
     bcdFile: './browsers/safari_ios.json',
     bcdBrowserName: 'safari_ios',
+    skippedReleases: ['12.1', '13.1', '14.1'],
+    releaseNoteJSON:
+      'https://developer.apple.com/tutorials/data/documentation/safari-release-notes.json',
+    releaseNoteURLBase: 'https://developer.apple.com',
+  },
+  webview_ios: {
+    browserName: 'WKWebView for iOS',
+    bcdFile: './browsers/webview_ios.json',
+    bcdBrowserName: 'webview_ios',
     skippedReleases: ['12.1', '13.1', '14.1'],
     releaseNoteJSON:
       'https://developer.apple.com/tutorials/data/documentation/safari-release-notes.json',
@@ -215,6 +251,16 @@ if (updateFirefox && updateMobile) {
   result += (result && add ? '\n' : '') + add;
 }
 
+if (updateOpera && updateDesktop) {
+  const add = await updateOperaReleases(options.opera_desktop);
+  result += (result && add ? '\n' : '') + add;
+}
+
+if (updateOpera && updateMobile) {
+  const add = await updateOperaReleases(options.opera_android);
+  result += (result && add ? '\n' : '') + add;
+}
+
 if (updateSafari && updateDesktop) {
   const add = await updateSafariReleases(options.safari_desktop);
   result += (result && add ? '\n' : '') + add;
@@ -222,6 +268,11 @@ if (updateSafari && updateDesktop) {
 
 if (updateSafari && updateMobile) {
   const add = await updateSafariReleases(options.safari_ios);
+  result += (result && add ? '\n' : '') + add;
+}
+
+if (updateSafari && updateMobile) {
+  const add = await updateSafariReleases(options.webview_ios);
   result += (result && add ? '\n' : '') + add;
 }
 

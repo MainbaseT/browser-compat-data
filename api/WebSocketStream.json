@@ -2,9 +2,7 @@
   "api": {
     "WebSocketStream": {
       "__compat": {
-        "tags": [
-          "web-features:web-features:web-socket-stream"
-        ],
+        "mdn_url": "https://developer.mozilla.org/docs/Web/API/WebSocketStream",
         "support": {
           "chrome": {
             "version_added": "124"
@@ -26,7 +24,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": true,
@@ -36,10 +35,8 @@
       },
       "WebSocketStream": {
         "__compat": {
-          "description": "<code>WebSocketStream()</code> constructor",
-          "tags": [
-            "web-features:web-features:web-socket-stream"
-          ],
+          "description": "`WebSocketStream()` constructor",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/WebSocketStream/WebSocketStream",
           "support": {
             "chrome": {
               "version_added": "124"
@@ -61,7 +58,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -72,9 +70,7 @@
       },
       "close": {
         "__compat": {
-          "tags": [
-            "web-features:web-features:web-socket-stream"
-          ],
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/WebSocketStream/close",
           "support": {
             "chrome": {
               "version_added": "124"
@@ -96,7 +92,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -107,9 +104,7 @@
       },
       "closed": {
         "__compat": {
-          "tags": [
-            "web-features:web-features:web-socket-stream"
-          ],
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/WebSocketStream/closed",
           "support": {
             "chrome": {
               "version_added": "124"
@@ -131,7 +126,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -142,9 +138,7 @@
       },
       "opened": {
         "__compat": {
-          "tags": [
-            "web-features:web-features:web-socket-stream"
-          ],
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/WebSocketStream/opened",
           "support": {
             "chrome": {
               "version_added": "124"
@@ -166,7 +160,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -177,9 +172,7 @@
       },
       "url": {
         "__compat": {
-          "tags": [
-            "web-features:web-features:web-socket-stream"
-          ],
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/WebSocketStream/url",
           "support": {
             "chrome": {
               "version_added": "124"
@@ -201,7 +194,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,

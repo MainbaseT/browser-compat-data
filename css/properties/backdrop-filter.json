@@ -24,7 +24,8 @@
               }
             ],
             "firefox": {
-              "version_added": "103"
+              "version_added": "103",
+              "notes": "Before Firefox 123, the property was not supported on systems with unknown GPU vendor (see bug [1868737](https://bugzil.la/1868737#c12))."
             },
             "firefox_android": "mirror",
             "ie": {
@@ -33,13 +34,19 @@
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
-            "safari": {
-              "prefix": "-webkit-",
-              "version_added": "9"
-            },
+            "safari": [
+              {
+                "version_added": "18"
+              },
+              {
+                "prefix": "-webkit-",
+                "version_added": "9"
+              }
+            ],
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

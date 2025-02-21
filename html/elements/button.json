@@ -5,6 +5,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/HTML/Element/button",
           "spec_url": "https://html.spec.whatwg.org/multipage/form-elements.html#the-button-element",
+          "tags": [
+            "web-features:button"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -18,7 +21,7 @@
             },
             "firefox_android": "mirror",
             "ie": {
-              "version_added": true
+              "version_added": "≤11"
             },
             "oculus": "mirror",
             "opera": {
@@ -28,11 +31,12 @@
               "version_added": "≤14"
             },
             "safari": {
-              "version_added": "≤4"
+              "version_added": "1"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -40,10 +44,123 @@
             "deprecated": false
           }
         },
+        "command": {
+          "__compat": {
+            "spec_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command",
+            "support": {
+              "chrome": {
+                "version_added": "preview",
+                "flags": [
+                  {
+                    "type": "preference",
+                    "name": "enable-experimental-web-platform-features",
+                    "value_to_set": "enabled"
+                  }
+                ]
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "preview",
+                "flags": [
+                  {
+                    "type": "preference",
+                    "name": "dom.element.invokers.enabled",
+                    "value_to_set": "true"
+                  }
+                ]
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "preview",
+                "flags": [
+                  {
+                    "type": "preference",
+                    "name": "InvokerAttributesEnabled",
+                    "value_to_set": "true"
+                  }
+                ]
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": true,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "commandfor": {
+          "__compat": {
+            "spec_url": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-commandfor",
+            "support": {
+              "chrome": {
+                "version_added": "preview",
+                "flags": [
+                  {
+                    "type": "preference",
+                    "name": "enable-experimental-web-platform-features",
+                    "value_to_set": "enabled"
+                  }
+                ]
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "preview",
+                "flags": [
+                  {
+                    "type": "preference",
+                    "name": "dom.element.invokers.enabled",
+                    "value_to_set": "true"
+                  }
+                ]
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": "preview",
+                "flags": [
+                  {
+                    "type": "preference",
+                    "name": "InvokerAttributesEnabled",
+                    "value_to_set": "true"
+                  }
+                ]
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": true,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
         "disabled": {
           "__compat": {
             "mdn_url": "https://developer.mozilla.org/docs/Web/HTML/Attributes/disabled",
             "spec_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled",
+            "tags": [
+              "web-features:button"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -57,7 +174,7 @@
               },
               "firefox_android": "mirror",
               "ie": {
-                "version_added": true
+                "version_added": "≤11"
               },
               "oculus": "mirror",
               "opera": "mirror",
@@ -67,7 +184,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -78,6 +196,9 @@
         },
         "form": {
           "__compat": {
+            "tags": [
+              "web-features:button"
+            ],
             "support": {
               "chrome": {
                 "version_added": "9"
@@ -101,7 +222,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -112,6 +234,9 @@
         },
         "formaction": {
           "__compat": {
+            "tags": [
+              "web-features:button"
+            ],
             "support": {
               "chrome": {
                 "version_added": "9"
@@ -129,9 +254,7 @@
               },
               "oculus": "mirror",
               "opera": "mirror",
-              "opera_android": {
-                "version_added": null
-              },
+              "opera_android": "mirror",
               "safari": {
                 "version_added": "5.1"
               },
@@ -139,7 +262,8 @@
               "samsunginternet_android": "mirror",
               "webview_android": {
                 "version_added": "37"
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -150,6 +274,9 @@
         },
         "formenctype": {
           "__compat": {
+            "tags": [
+              "web-features:button"
+            ],
             "support": {
               "chrome": {
                 "version_added": "9"
@@ -179,7 +306,8 @@
               "samsunginternet_android": "mirror",
               "webview_android": {
                 "version_added": "37"
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -190,6 +318,9 @@
         },
         "formmethod": {
           "__compat": {
+            "tags": [
+              "web-features:button"
+            ],
             "support": {
               "chrome": {
                 "version_added": "9"
@@ -215,7 +346,8 @@
               "samsunginternet_android": "mirror",
               "webview_android": {
                 "version_added": "37"
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -226,6 +358,9 @@
         },
         "formnovalidate": {
           "__compat": {
+            "tags": [
+              "web-features:button"
+            ],
             "support": {
               "chrome": {
                 "version_added": "9"
@@ -239,7 +374,7 @@
               },
               "firefox_android": "mirror",
               "ie": {
-                "version_added": true
+                "version_added": "≤11"
               },
               "oculus": "mirror",
               "opera": "mirror",
@@ -249,7 +384,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -260,6 +396,9 @@
         },
         "formtarget": {
           "__compat": {
+            "tags": [
+              "web-features:button"
+            ],
             "support": {
               "chrome": {
                 "version_added": "9"
@@ -273,7 +412,7 @@
               },
               "firefox_android": "mirror",
               "ie": {
-                "version_added": true
+                "version_added": "≤11"
               },
               "oculus": "mirror",
               "opera": "mirror",
@@ -283,7 +422,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -294,6 +434,9 @@
         },
         "name": {
           "__compat": {
+            "tags": [
+              "web-features:button"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -307,7 +450,7 @@
               },
               "firefox_android": "mirror",
               "ie": {
-                "version_added": true
+                "version_added": "≤11"
               },
               "oculus": "mirror",
               "opera": "mirror",
@@ -317,7 +460,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -354,12 +498,50 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
               "standard_track": true,
               "deprecated": false
+            }
+          },
+          "implicit_anchor_reference": {
+            "__compat": {
+              "description": "Implicit anchor reference via `popovertarget`",
+              "tags": [
+                "web-features:popover"
+              ],
+              "support": {
+                "chrome": {
+                  "version_added": "133"
+                },
+                "chrome_android": "mirror",
+                "edge": "mirror",
+                "firefox": {
+                  "version_added": false
+                },
+                "firefox_android": "mirror",
+                "ie": {
+                  "version_added": false
+                },
+                "oculus": "mirror",
+                "opera": "mirror",
+                "opera_android": "mirror",
+                "safari": {
+                  "version_added": false
+                },
+                "safari_ios": "mirror",
+                "samsunginternet_android": "mirror",
+                "webview_android": "mirror",
+                "webview_ios": "mirror"
+              },
+              "status": {
+                "experimental": true,
+                "standard_track": true,
+                "deprecated": false
+              }
             }
           }
         },
@@ -391,7 +573,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -402,6 +585,9 @@
         },
         "type": {
           "__compat": {
+            "tags": [
+              "web-features:button"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -415,7 +601,7 @@
               },
               "firefox_android": "mirror",
               "ie": {
-                "version_added": true
+                "version_added": "≤11"
               },
               "oculus": "mirror",
               "opera": "mirror",
@@ -425,7 +611,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -436,6 +623,9 @@
         },
         "value": {
           "__compat": {
+            "tags": [
+              "web-features:button"
+            ],
             "support": {
               "chrome": {
                 "version_added": "1"
@@ -449,7 +639,7 @@
               },
               "firefox_android": "mirror",
               "ie": {
-                "version_added": true
+                "version_added": "≤11"
               },
               "oculus": "mirror",
               "opera": "mirror",
@@ -459,7 +649,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
