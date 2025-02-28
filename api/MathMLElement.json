@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/MathMLElement",
         "spec_url": "https://w3c.github.io/mathml-core/#dom-mathmlelement",
+        "tags": [
+          "web-features:mathml"
+        ],
         "support": {
           "chrome": {
             "version_added": "109"
@@ -25,7 +28,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -35,7 +39,11 @@
       },
       "attributeStyleMap": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/MathMLElement/attributeStyleMap",
           "spec_url": "https://drafts.css-houdini.org/css-typed-om/#dom-elementcssinlinestyle-attributestylemap",
+          "tags": [
+            "web-features:mathml"
+          ],
           "support": {
             "chrome": {
               "version_added": "109"
@@ -58,7 +66,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -70,6 +79,9 @@
       "autofocus": {
         "__compat": {
           "spec_url": "https://html.spec.whatwg.org/multipage/interaction.html#dom-fe-autofocus",
+          "tags": [
+            "web-features:autofocus"
+          ],
           "support": {
             "chrome": {
               "version_added": "109"
@@ -91,7 +103,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -103,6 +116,9 @@
       "blur": {
         "__compat": {
           "spec_url": "https://html.spec.whatwg.org/multipage/interaction.html#dom-blur-dev",
+          "tags": [
+            "web-features:mathml"
+          ],
           "support": {
             "chrome": {
               "version_added": "109"
@@ -124,7 +140,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -136,6 +153,9 @@
       "dataset": {
         "__compat": {
           "spec_url": "https://html.spec.whatwg.org/multipage/dom.html#dom-dataset-dev",
+          "tags": [
+            "web-features:dataset"
+          ],
           "support": {
             "chrome": {
               "version_added": "109"
@@ -157,7 +177,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -169,6 +190,9 @@
       "focus": {
         "__compat": {
           "spec_url": "https://html.spec.whatwg.org/multipage/interaction.html#dom-focus-dev",
+          "tags": [
+            "web-features:mathml"
+          ],
           "support": {
             "chrome": {
               "version_added": "109"
@@ -190,7 +214,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -202,6 +227,9 @@
       "nonce": {
         "__compat": {
           "spec_url": "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#dom-noncedelement-nonce",
+          "tags": [
+            "web-features:mathml"
+          ],
           "support": {
             "chrome": {
               "version_added": "109"
@@ -223,7 +251,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -234,7 +263,11 @@
       },
       "style": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/MathMLElement/style",
           "spec_url": "https://drafts.csswg.org/cssom/#dom-elementcssinlinestyle-style",
+          "tags": [
+            "web-features:mathml"
+          ],
           "support": {
             "chrome": {
               "version_added": "109"
@@ -256,7 +289,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -268,6 +302,9 @@
       "tabIndex": {
         "__compat": {
           "spec_url": "https://html.spec.whatwg.org/multipage/interaction.html#dom-tabindex",
+          "tags": [
+            "web-features:mathml"
+          ],
           "support": {
             "chrome": {
               "version_added": "109"
@@ -289,7 +326,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

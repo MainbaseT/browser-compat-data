@@ -3,7 +3,10 @@
     "Window": {
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window",
-        "spec_url": "https://html.spec.whatwg.org/multipage/window-object.html#the-window-object",
+        "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-window-object",
+        "tags": [
+          "web-features:window"
+        ],
         "support": {
           "chrome": {
             "version_added": "1"
@@ -36,7 +39,8 @@
           "samsunginternet_android": "mirror",
           "webview_android": {
             "version_added": "≤37"
-          }
+          },
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -46,9 +50,12 @@
       },
       "DOMContentLoaded_event": {
         "__compat": {
-          "description": "<code>DOMContentLoaded</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/DOMContentLoaded_event",
+          "description": "`DOMContentLoaded` event",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Document/DOMContentLoaded_event",
           "spec_url": "https://html.spec.whatwg.org/multipage/indices.html#event-domcontentloaded",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -78,7 +85,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -89,11 +97,14 @@
       },
       "afterprint_event": {
         "__compat": {
-          "description": "<code>afterprint</code> event",
+          "description": "`afterprint` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/afterprint_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/indices.html#event-afterprint",
             "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onafterprint"
+          ],
+          "tags": [
+            "web-features:print-events"
           ],
           "support": {
             "chrome": {
@@ -118,7 +129,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -131,10 +143,13 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/alert",
           "spec_url": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-alert-dev",
+          "tags": [
+            "web-features:alerts"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
-              "notes": "Starting with Chrome 46, this method is blocked inside an <code>&lt;iframe&gt;</code> unless its sandbox attribute has the value <code>allow-modals</code>."
+              "notes": "Starting with Chrome 46, this method is blocked inside an `&lt;iframe&gt;` unless its sandbox attribute has the value `allow-modals`."
             },
             "chrome_android": "mirror",
             "deno": {
@@ -153,18 +168,19 @@
             "oculus": "mirror",
             "opera": {
               "version_added": "3",
-              "notes": "Starting with Opera 33, this method is blocked inside an <code>&lt;iframe&gt;</code> unless its sandbox attribute has the value <code>allow-modals</code>."
+              "notes": "Starting with Opera 33, this method is blocked inside an `&lt;iframe&gt;` unless its sandbox attribute has the value `allow-modals`."
             },
             "opera_android": {
               "version_added": "10.1",
-              "notes": "Starting with Opera 33, this method is blocked inside an <code>&lt;iframe&gt;</code> unless its sandbox attribute has the value <code>allow-modals</code>."
+              "notes": "Starting with Opera 33, this method is blocked inside an `&lt;iframe&gt;` unless its sandbox attribute has the value `allow-modals`."
             },
             "safari": {
               "version_added": "1"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -175,9 +191,12 @@
       },
       "appinstalled_event": {
         "__compat": {
-          "description": "<code>appinstalled</code> event",
+          "description": "`appinstalled` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/appinstalled_event",
           "spec_url": "https://wicg.github.io/manifest-incubations/#dom-window-onappinstalled",
+          "tags": [
+            "web-features:beforeinstallprompt"
+          ],
           "support": {
             "chrome": {
               "version_added": "64"
@@ -196,18 +215,19 @@
             "oculus": "mirror",
             "opera": {
               "version_added": false,
-              "notes": "Opera exposes the <code>onappinstalled</code> event handler, but the event is never fired."
+              "notes": "Opera exposes the `onappinstalled` event handler, but the event is never fired."
             },
             "opera_android": {
               "version_added": false,
-              "notes": "Opera exposes the <code>onappinstalled</code> event handler, but the event is never fired."
+              "notes": "Opera exposes the `onappinstalled` event handler, but the event is never fired."
             },
             "safari": {
               "version_added": false
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -218,9 +238,12 @@
       },
       "beforeinstallprompt_event": {
         "__compat": {
-          "description": "<code>beforeinstallprompt</code> event",
+          "description": "`beforeinstallprompt` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/beforeinstallprompt_event",
           "spec_url": "https://wicg.github.io/manifest-incubations/#onbeforeinstallprompt-attribute",
+          "tags": [
+            "web-features:beforeinstallprompt"
+          ],
           "support": {
             "chrome": [
               {
@@ -230,7 +253,7 @@
                 "version_added": "44",
                 "version_removed": "61",
                 "partial_implementation": true,
-                "notes": "The <code>onbeforeinstallprompt</code> event handler property is not supported."
+                "notes": "The `onbeforeinstallprompt` event handler property is not supported."
               }
             ],
             "chrome_android": "mirror",
@@ -257,10 +280,11 @@
                 "version_added": "5.0",
                 "version_removed": "8.0",
                 "partial_implementation": true,
-                "notes": "The <code>onbeforeinstallprompt</code> event handler property is not supported."
+                "notes": "The `onbeforeinstallprompt` event handler property is not supported."
               }
             ],
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -271,11 +295,14 @@
       },
       "beforeprint_event": {
         "__compat": {
-          "description": "<code>beforeprint</code> event",
+          "description": "`beforeprint` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/beforeprint_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/indices.html#event-beforeprint",
             "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onbeforeprint"
+          ],
+          "tags": [
+            "web-features:print-events"
           ],
           "support": {
             "chrome": {
@@ -300,7 +327,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -311,11 +339,14 @@
       },
       "beforeunload_event": {
         "__compat": {
-          "description": "<code>beforeunload</code> event",
+          "description": "`beforeunload` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/beforeunload_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/indices.html#event-beforeunload",
             "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onbeforeunload"
+          ],
+          "tags": [
+            "web-features:beforeunload"
           ],
           "support": {
             "chrome": {
@@ -343,10 +374,12 @@
               "version_added": "3"
             },
             "safari_ios": {
-              "version_added": "1"
+              "version_added": false,
+              "impl_url": "https://webkit.org/b/219102"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -356,7 +389,7 @@
         },
         "event_returnvalue_activation": {
           "__compat": {
-            "description": "Activation by setting <code>event.returnValue</code> to any truthy value",
+            "description": "Activation by setting `event.returnValue` to any truthy value",
             "support": {
               "chrome": [
                 {
@@ -391,7 +424,8 @@
                 "version_added": false
               },
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -424,9 +458,12 @@
               "safari": {
                 "version_added": "9.1"
               },
-              "safari_ios": "mirror",
+              "safari_ios": {
+                "version_added": false
+              },
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -437,7 +474,10 @@
         },
         "preventdefault_activation": {
           "__compat": {
-            "description": "Activation using <code>event.preventDefault()</code>",
+            "description": "Activation using `event.preventDefault()`",
+            "tags": [
+              "web-features:beforeunload"
+            ],
             "support": {
               "chrome": {
                 "version_added": "119"
@@ -472,7 +512,8 @@
                 "version_added": false
               },
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -516,7 +557,8 @@
                 "version_added": false
               },
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -560,7 +602,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -571,11 +614,14 @@
       },
       "blur_event": {
         "__compat": {
-          "description": "<code>blur</code> event",
+          "description": "`blur` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/blur_event",
           "spec_url": [
             "https://w3c.github.io/uievents/#event-type-blur",
             "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onblur"
+          ],
+          "tags": [
+            "web-features:window"
           ],
           "support": {
             "chrome": {
@@ -588,8 +634,8 @@
             "firefox": {
               "version_added": "6",
               "notes": [
-                "Apart from firing the event on <code>window</code> as other browsers do, Firefox also fires the event on the <code>document</code> object. See <a href='https://bugzil.la/1228802'>bug 1228802</a>.",
-                "Before Firefox 24, the interface for this event is a plain <a href='https://developer.mozilla.org/docs/Web/API/Event'><code>Event</code></a>, not <a href='https://developer.mozilla.org/docs/Web/API/FocusEvent'><code>FocusEvent</code></a>."
+                "Apart from firing the event on `window` as other browsers do, Firefox also fires the event on the `document` object. See [bug 1228802](https://bugzil.la/1228802).",
+                "Before Firefox 24, the interface for this event is a plain [`Event`](https://developer.mozilla.org/docs/Web/API/Event), not [`FocusEvent`](https://developer.mozilla.org/docs/Web/API/FocusEvent)."
               ]
             },
             "firefox_android": "mirror",
@@ -610,7 +656,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -623,6 +670,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/cancelAnimationFrame",
           "spec_url": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider-cancelanimationframe",
+          "tags": [
+            "web-features:request-animation-frame"
+          ],
           "support": {
             "chrome": {
               "version_added": "24"
@@ -660,7 +710,8 @@
             ],
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -673,6 +724,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/cancelIdleCallback",
           "spec_url": "https://w3c.github.io/requestidlecallback/#the-cancelidlecallback-method",
+          "tags": [
+            "web-features:requestidlecallback"
+          ],
           "support": {
             "chrome": {
               "version_added": "47"
@@ -695,7 +749,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -735,7 +790,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -766,7 +822,7 @@
             "nodejs": {
               "version_added": "0.10.0",
               "partial_implementation": true,
-              "notes": "Takes an <code>Immediate</code> object instead of the <code>immediateID</code>."
+              "notes": "Takes an `Immediate` object instead of the `immediateID`."
             },
             "oculus": "mirror",
             "opera": "mirror",
@@ -776,7 +832,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -788,7 +845,10 @@
       "close": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/close",
-          "spec_url": "https://html.spec.whatwg.org/multipage/window-object.html#dom-window-close-dev",
+          "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window-close-dev",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -821,7 +881,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -833,7 +894,10 @@
       "closed": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/closed",
-          "spec_url": "https://html.spec.whatwg.org/multipage/window-object.html#dom-window-closed-dev",
+          "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window-closed-dev",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -861,7 +925,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -874,10 +939,13 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/confirm",
           "spec_url": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-confirm-dev",
+          "tags": [
+            "web-features:alerts"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
-              "notes": "Starting with Chrome 46, this method is blocked inside an <code>&lt;iframe&gt;</code> unless its sandbox attribute has the value <code>allow-modals</code>."
+              "notes": "Starting with Chrome 46, this method is blocked inside an `&lt;iframe&gt;` unless its sandbox attribute has the value `allow-modals`."
             },
             "chrome_android": "mirror",
             "deno": {
@@ -896,11 +964,11 @@
             "oculus": "mirror",
             "opera": {
               "version_added": "3",
-              "notes": "Starting with Opera 33, this method is blocked inside an <code>&lt;iframe&gt;</code> unless its sandbox attribute has the value <code>allow-modals</code>."
+              "notes": "Starting with Opera 33, this method is blocked inside an `&lt;iframe&gt;` unless its sandbox attribute has the value `allow-modals`."
             },
             "opera_android": {
               "version_added": "10.1",
-              "notes": "Starting with Opera 33, this method is blocked inside an <code>&lt;iframe&gt;</code> unless its sandbox attribute has the value <code>allow-modals</code>."
+              "notes": "Starting with Opera 33, this method is blocked inside an `&lt;iframe&gt;` unless its sandbox attribute has the value `allow-modals`."
             },
             "safari": {
               "version_added": "1"
@@ -909,8 +977,9 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "1",
-              "notes": "Starting with Chrome 46, this method is blocked inside an <code>&lt;iframe&gt;</code> unless its sandbox attribute has the value <code>allow-modals</code>."
-            }
+              "notes": "Starting with Chrome 46, this method is blocked inside an `&lt;iframe&gt;` unless its sandbox attribute has the value `allow-modals`."
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -923,6 +992,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/cookieStore",
           "spec_url": "https://wicg.github.io/cookie-store/#dom-window-cookiestore",
+          "tags": [
+            "web-features:cookie-store"
+          ],
           "support": {
             "chrome": {
               "version_added": "87"
@@ -930,8 +1002,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false,
-              "impl_url": "https://bugzil.la/1475599"
+              "version_added": "136"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -941,15 +1012,15 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false,
-              "impl_url": "https://webkit.org/b/231750"
+              "version_added": "18.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -959,6 +1030,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/credentialless",
           "spec_url": "https://wicg.github.io/anonymous-iframe/#dom-window-credentialless",
+          "tags": [
+            "web-features:iframe-credentialless"
+          ],
           "support": {
             "chrome": {
               "version_added": "110"
@@ -980,7 +1054,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -1017,7 +1092,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1028,11 +1104,14 @@
       },
       "devicemotion_event": {
         "__compat": {
-          "description": "<code>devicemotion</code> event",
+          "description": "`devicemotion` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/devicemotion_event",
           "spec_url": [
             "https://w3c.github.io/deviceorientation/#devicemotion",
             "https://w3c.github.io/deviceorientation/#ref-for-dom-window-ondevicemotion"
+          ],
+          "tags": [
+            "web-features:device-orientation-events"
           ],
           "support": {
             "chrome": {
@@ -1059,7 +1138,8 @@
               "version_added": "4.2"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1070,11 +1150,14 @@
       },
       "deviceorientation_event": {
         "__compat": {
-          "description": "<code>deviceorientation</code> event",
+          "description": "`deviceorientation` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/deviceorientation_event",
           "spec_url": [
             "https://w3c.github.io/deviceorientation/#deviceorientation",
             "https://w3c.github.io/deviceorientation/#ref-for-dom-window-ondeviceorientation"
+          ],
+          "tags": [
+            "web-features:device-orientation-events"
           ],
           "support": {
             "chrome": {
@@ -1114,7 +1197,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1125,9 +1209,12 @@
       },
       "deviceorientationabsolute_event": {
         "__compat": {
-          "description": "<code>deviceorientationabsolute</code> event",
+          "description": "`deviceorientationabsolute` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/deviceorientationabsolute_event",
           "spec_url": "https://w3c.github.io/deviceorientation/#dom-window-ondeviceorientationabsolute",
+          "tags": [
+            "web-features:device-orientation-events"
+          ],
           "support": {
             "chrome": {
               "version_added": "50"
@@ -1149,7 +1236,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1162,6 +1250,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio",
           "spec_url": "https://drafts.csswg.org/cssom-view/#dom-window-devicepixelratio",
+          "tags": [
+            "web-features:devicepixelratio"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -1187,11 +1278,12 @@
             "safari": {
               "version_added": "3",
               "partial_implementation": true,
-              "notes": "In Safari, the <code>devicePixelRatio</code> does not change when the page is zoomed. See <a href='https://webkit.org/b/124862'>bug 124862</a>."
+              "notes": "In Safari, the `devicePixelRatio` does not change when the page is zoomed. See [bug 124862](https://webkit.org/b/124862)."
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1203,7 +1295,10 @@
       "document": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/document",
-          "spec_url": "https://html.spec.whatwg.org/multipage/window-object.html#dom-document-dev",
+          "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-document-dev",
+          "tags": [
+            "web-features:dom"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -1231,7 +1326,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1244,6 +1340,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/documentPictureInPicture",
           "spec_url": "https://wicg.github.io/document-picture-in-picture/#dom-window-documentpictureinpicture",
+          "tags": [
+            "web-features:document-picture-in-picture"
+          ],
           "support": {
             "chrome": {
               "version_added": "116"
@@ -1267,7 +1366,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -1318,7 +1418,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1329,11 +1430,14 @@
       },
       "error_event": {
         "__compat": {
-          "description": "<code>error</code> event",
+          "description": "`error` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/error_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/indices.html#event-error",
             "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onerror"
+          ],
+          "tags": [
+            "web-features:window"
           ],
           "support": {
             "chrome": {
@@ -1363,7 +1467,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1403,7 +1508,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1427,7 +1533,7 @@
             "firefox": [
               {
                 "version_added": "2",
-                "notes": "From Firefox 78 <code>AddSearchProvider()</code> does nothing, as the specification requires."
+                "notes": "From Firefox 78 `AddSearchProvider()` does nothing, as the specification requires."
               },
               {
                 "alternative_name": "sidebar",
@@ -1435,17 +1541,7 @@
                 "version_removed": "102"
               }
             ],
-            "firefox_android": [
-              {
-                "version_added": "4",
-                "notes": "From Firefox for Android 79 <code>AddSearchProvider()</code> does nothing, as the specification requires."
-              },
-              {
-                "alternative_name": "sidebar",
-                "version_added": "4",
-                "version_removed": "102"
-              }
-            ],
+            "firefox_android": "mirror",
             "ie": {
               "version_added": "4"
             },
@@ -1459,7 +1555,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "4.4.3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1472,9 +1569,12 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/fence",
           "spec_url": "https://wicg.github.io/fenced-frame/#dom-window-fence",
+          "tags": [
+            "web-features:fencedframe"
+          ],
           "support": {
             "chrome": {
-              "version_added": "117"
+              "version_added": "115"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -1493,7 +1593,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -1528,7 +1629,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1541,6 +1643,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/focus",
           "spec_url": "https://html.spec.whatwg.org/multipage/interaction.html#dom-window-focus-dev",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -1571,7 +1676,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1582,11 +1688,14 @@
       },
       "focus_event": {
         "__compat": {
-          "description": "<code>focus</code> event",
+          "description": "`focus` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/focus_event",
           "spec_url": [
             "https://w3c.github.io/uievents/#event-type-focus",
             "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onfocus"
+          ],
+          "tags": [
+            "web-features:window"
           ],
           "support": {
             "chrome": {
@@ -1599,8 +1708,8 @@
             "firefox": {
               "version_added": "6",
               "notes": [
-                "Apart from firing the event on <code>window</code> as other browsers do, Firefox also fires the event on the <code>document</code> object. See <a href='https://bugzil.la/1228802'>bug 1228802</a>.",
-                "Before Firefox 24, the interface for this event is a plain <a href='https://developer.mozilla.org/docs/Web/API/Event'><code>Event</code></a>, not <a href='https://developer.mozilla.org/docs/Web/API/FocusEvent'><code>FocusEvent</code></a>."
+                "Apart from firing the event on `window` as other browsers do, Firefox also fires the event on the `document` object. See [bug 1228802](https://bugzil.la/1228802).",
+                "Before Firefox 24, the interface for this event is a plain [`Event`](https://developer.mozilla.org/docs/Web/API/Event), not [`FocusEvent`](https://developer.mozilla.org/docs/Web/API/FocusEvent)."
               ]
             },
             "firefox_android": "mirror",
@@ -1621,7 +1730,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1634,6 +1744,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/frameElement",
           "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-frameelement-dev",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -1663,7 +1776,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1675,7 +1789,10 @@
       "frames": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/frames",
-          "spec_url": "https://html.spec.whatwg.org/multipage/window-object.html#dom-frames-dev",
+          "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-frames-dev",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -1703,7 +1820,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1736,7 +1854,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1747,24 +1866,27 @@
       },
       "gamepadconnected_event": {
         "__compat": {
-          "description": "<code>gamepadconnected</code> event",
+          "description": "`gamepadconnected` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/gamepadconnected_event",
           "spec_url": "https://w3c.github.io/gamepad/#event-gamepadconnected",
+          "tags": [
+            "web-features:gamepad"
+          ],
           "support": {
             "chrome": {
               "version_added": "35",
               "partial_implementation": true,
-              "notes": "The <code>ongamepadconnected</code> event handler property is not supported. See <a href='https://crbug.com/1192878'>bug 1192878</a>."
+              "notes": "The `ongamepadconnected` event handler property is not supported. See [bug 40175074](https://crbug.com/40175074)."
             },
             "chrome_android": {
               "version_added": "37",
               "partial_implementation": true,
-              "notes": "The <code>ongamepadconnected</code> event handler property is not supported. See <a href='https://crbug.com/1192878'>bug 1192878</a>."
+              "notes": "The `ongamepadconnected` event handler property is not supported. See [bug 40175074](https://crbug.com/40175074)."
             },
             "edge": {
               "version_added": "≤18",
               "partial_implementation": true,
-              "notes": "The <code>ongamepadconnected</code> event handler property is not supported. See <a href='https://crbug.com/1192878'>bug 1192878</a>."
+              "notes": "The `ongamepadconnected` event handler property is not supported. See [bug 40175074](https://crbug.com/40175074)."
             },
             "firefox": [
               {
@@ -1774,7 +1896,7 @@
                 "version_added": "29",
                 "version_removed": "89",
                 "partial_implementation": true,
-                "notes": "The <code>ongamepadconnected</code> event handler property is not supported. See <a href='https://bugzil.la/1697093'>bug 1697093</a>."
+                "notes": "The `ongamepadconnected` event handler property is not supported. See [bug 1697093](https://bugzil.la/1697093)."
               }
             ],
             "firefox_android": [
@@ -1785,7 +1907,7 @@
                 "version_added": "32",
                 "version_removed": "89",
                 "partial_implementation": true,
-                "notes": "The <code>ongamepadconnected</code> event handler property is not supported. See <a href='https://bugzil.la/1697093'>bug 1697093</a>."
+                "notes": "The `ongamepadconnected` event handler property is not supported. See [bug 1697093](https://bugzil.la/1697093)."
               }
             ],
             "ie": {
@@ -1802,12 +1924,13 @@
                 "version_added": "10.1",
                 "version_removed": "16",
                 "partial_implementation": true,
-                "notes": "The <code>ongamepadconnected</code> event handler property is not supported. See <a href='https://webkit.org/b/223860'>bug 223860</a>."
+                "notes": "The `ongamepadconnected` event handler property is not supported. See [bug 223860](https://webkit.org/b/223860)."
               }
             ],
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1818,24 +1941,27 @@
       },
       "gamepaddisconnected_event": {
         "__compat": {
-          "description": "<code>gamepaddisconnected</code> event",
+          "description": "`gamepaddisconnected` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/gamepaddisconnected_event",
           "spec_url": "https://w3c.github.io/gamepad/#event-gamepaddisconnected",
+          "tags": [
+            "web-features:gamepad"
+          ],
           "support": {
             "chrome": {
               "version_added": "35",
               "partial_implementation": true,
-              "notes": "The <code>ongamepaddisconnected</code> event handler property is not supported. See <a href='https://crbug.com/1192878'>bug 1192878</a>."
+              "notes": "The `ongamepaddisconnected` event handler property is not supported. See [bug 40175074](https://crbug.com/40175074)."
             },
             "chrome_android": {
               "version_added": "37",
               "partial_implementation": true,
-              "notes": "The <code>ongamepaddisconnected</code> event handler property is not supported. See <a href='https://crbug.com/1192878'>bug 1192878</a>."
+              "notes": "The `ongamepaddisconnected` event handler property is not supported. See [bug 40175074](https://crbug.com/40175074)."
             },
             "edge": {
               "version_added": "≤18",
               "partial_implementation": true,
-              "notes": "The <code>ongamepaddisconnected</code> event handler property is not supported. See <a href='https://crbug.com/1192878'>bug 1192878</a>."
+              "notes": "The `ongamepaddisconnected` event handler property is not supported. See [bug 40175074](https://crbug.com/40175074)."
             },
             "firefox": [
               {
@@ -1845,7 +1971,7 @@
                 "version_added": "29",
                 "version_removed": "89",
                 "partial_implementation": true,
-                "notes": "The <code>ongamepaddisconnected</code> event handler property is not supported. See <a href='https://bugzil.la/1697093'>bug 1697093</a>."
+                "notes": "The `ongamepaddisconnected` event handler property is not supported. See [bug 1697093](https://bugzil.la/1697093)."
               }
             ],
             "firefox_android": [
@@ -1856,7 +1982,7 @@
                 "version_added": "32",
                 "version_removed": "89",
                 "partial_implementation": true,
-                "notes": "The <code>ongamepaddisconnected</code> event handler property is not supported. See <a href='https://bugzil.la/1697093'>bug 1697093</a>."
+                "notes": "The `ongamepaddisconnected` event handler property is not supported. See [bug 1697093](https://bugzil.la/1697093)."
               }
             ],
             "ie": {
@@ -1873,12 +1999,13 @@
                 "version_added": "10.1",
                 "version_removed": "16",
                 "partial_implementation": true,
-                "notes": "The <code>ongamepaddisconnected</code> event handler property is not supported. See <a href='https://webkit.org/b/223860'>bug 223860</a>."
+                "notes": "The `ongamepaddisconnected` event handler property is not supported. See [bug 223860](https://webkit.org/b/223860)."
               }
             ],
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1891,6 +2018,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/getComputedStyle",
           "spec_url": "https://drafts.csswg.org/cssom/#dom-window-getcomputedstyle",
+          "tags": [
+            "web-features:get-computed-style"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -1901,7 +2031,7 @@
             },
             "firefox": {
               "version_added": "1",
-              "notes": "Before version 62 this function returned <code>null</code> when called on a Window with no presentation (e.g. an iframe with <code>display: none;</code> set). Since 62 it returns a <code>CSSStyleDeclaration</code> object with <code>length</code> 0, containing empty strings (<a href='https://bugzil.la/1467722'>bug 1467722</a>; also see <a href='https://bugzil.la/1471231'>bug 1471231</a> for further work)."
+              "notes": "Before version 62 this function returned `null` when called on a Window with no presentation (e.g. an iframe with `display: none;` set). Since 62 it returns a `CSSStyleDeclaration` object with `length` 0, containing empty strings ([bug 1467722](https://bugzil.la/1467722); also see [bug 1471231](https://bugzil.la/1471231) for further work)."
             },
             "firefox_android": "mirror",
             "ie": {
@@ -1921,7 +2051,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1932,6 +2063,9 @@
         "pseudo_element_support": {
           "__compat": {
             "description": "Pseudo-element support",
+            "tags": [
+              "web-features:get-computed-style"
+            ],
             "support": {
               "chrome": {
                 "version_added": "11"
@@ -1961,7 +2095,8 @@
               "samsunginternet_android": "mirror",
               "webview_android": {
                 "version_added": "≤37"
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1995,7 +2130,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -2027,7 +2163,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -2040,6 +2177,9 @@
       "getDigitalGoodsService": {
         "__compat": {
           "spec_url": "https://wicg.github.io/digital-goods/#getdigitalgoodsservice-method",
+          "tags": [
+            "web-features:digital-goods"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -2065,7 +2205,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -2078,6 +2219,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/getScreenDetails",
           "spec_url": "https://w3c.github.io/window-management/#api-window-getScreenDetails-method",
+          "tags": [
+            "web-features:window-management"
+          ],
           "support": {
             "chrome": {
               "version_added": "100"
@@ -2099,7 +2243,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -2112,6 +2257,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/getSelection",
           "spec_url": "https://w3c.github.io/selection-api/#dom-window-getselection",
+          "tags": [
+            "web-features:selection-api"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -2139,7 +2287,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -2150,11 +2299,14 @@
       },
       "hashchange_event": {
         "__compat": {
-          "description": "<code>hashchange</code> event",
+          "description": "`hashchange` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/hashchange_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/indices.html#event-hashchange",
             "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onhashchange"
+          ],
+          "tags": [
+            "web-features:hashchange"
           ],
           "support": {
             "chrome": [
@@ -2164,7 +2316,7 @@
               {
                 "version_added": "4",
                 "version_removed": "8",
-                "notes": "A regular <code>Event</code> object is fired, rather than a <code>HashChangeEvent</code> object."
+                "notes": "A regular `Event` object is fired, rather than a `HashChangeEvent` object."
               }
             ],
             "chrome_android": "mirror",
@@ -2194,7 +2346,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -2207,6 +2360,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/history",
           "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-history-interface",
+          "tags": [
+            "web-features:history"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -2234,7 +2390,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -2247,6 +2404,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/innerHeight",
           "spec_url": "https://drafts.csswg.org/cssom-view/#dom-window-innerheight",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -2257,11 +2417,11 @@
             },
             "firefox": {
               "version_added": "1",
-              "notes": "From version 4 to 24, this property could give a wrong value before page load in certain circumstances (see <a href='https://bugzil.la/641188'>bug 641188</a>)."
+              "notes": "From version 4 to 24, this property could give a wrong value before page load in certain circumstances (see [bug 641188](https://bugzil.la/641188))."
             },
             "firefox_android": {
               "version_added": "4",
-              "notes": "Before version 24, this property could give a wrong value before page load in certain circumstances (see <a href='https://bugzil.la/641188'>bug 641188</a>)."
+              "notes": "Before version 24, this property could give a wrong value before page load in certain circumstances (see [bug 641188](https://bugzil.la/641188))."
             },
             "ie": {
               "version_added": "9"
@@ -2278,10 +2438,11 @@
             },
             "safari_ios": {
               "version_added": "1",
-              "notes": "This property returns the height of the <a href='https://developer.mozilla.org/docs/Glossary/visual_viewport'>visual viewport</a> instead of the layout viewport. See <a href='https://webkit.org/b/174362'>bug 174362</a> for details."
+              "notes": "This property returns the height of the [visual viewport](https://developer.mozilla.org/docs/Glossary/visual_viewport) instead of the layout viewport. See [bug 174362](https://webkit.org/b/174362) for details."
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -2294,6 +2455,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/innerWidth",
           "spec_url": "https://drafts.csswg.org/cssom-view/#dom-window-innerwidth",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -2304,11 +2468,11 @@
             },
             "firefox": {
               "version_added": "1",
-              "notes": "From version 4 to 24, this property could give a wrong value before page load in certain circumstances (see <a href='https://bugzil.la/641188'>bug 641188</a>)."
+              "notes": "From version 4 to 24, this property could give a wrong value before page load in certain circumstances (see [bug 641188](https://bugzil.la/641188))."
             },
             "firefox_android": {
               "version_added": "4",
-              "notes": "Before version 24, this property could give a wrong value before page load in certain circumstances (see <a href='https://bugzil.la/641188'>bug 641188</a>)."
+              "notes": "Before version 24, this property could give a wrong value before page load in certain circumstances (see [bug 641188](https://bugzil.la/641188))."
             },
             "ie": {
               "version_added": "9"
@@ -2325,10 +2489,11 @@
             },
             "safari_ios": {
               "version_added": "1",
-              "notes": "This property returns the width of the <a href='https://developer.mozilla.org/docs/Glossary/visual_viewport'>visual viewport</a> instead of the layout viewport. See <a href='https://webkit.org/b/174362'>bug 174362</a> for details."
+              "notes": "This property returns the width of the [visual viewport](https://developer.mozilla.org/docs/Glossary/visual_viewport) instead of the layout viewport. See [bug 174362](https://webkit.org/b/174362) for details."
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -2339,11 +2504,14 @@
       },
       "languagechange_event": {
         "__compat": {
-          "description": "<code>languagechange</code> event",
+          "description": "`languagechange` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/languagechange_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/indices.html#event-languagechange",
             "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onlanguagechange"
+          ],
+          "tags": [
+            "web-features:language"
           ],
           "support": {
             "chrome": {
@@ -2370,7 +2538,8 @@
             "samsunginternet_android": {
               "version_added": "4.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -2387,7 +2556,9 @@
             "chrome": {
               "version_added": "102"
             },
-            "chrome_android": "mirror",
+            "chrome_android": {
+              "version_added": false
+            },
             "edge": "mirror",
             "firefox": {
               "version_added": false
@@ -2404,7 +2575,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -2416,7 +2588,10 @@
       "length": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/length",
-          "spec_url": "https://html.spec.whatwg.org/multipage/window-object.html#dom-length-dev",
+          "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-length-dev",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -2444,7 +2619,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -2455,11 +2631,14 @@
       },
       "load_event": {
         "__compat": {
-          "description": "<code>load</code> event",
+          "description": "`load` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/load_event",
           "spec_url": [
             "https://w3c.github.io/uievents/#event-type-load",
             "https://html.spec.whatwg.org/multipage/parsing.html#delay-the-load-event"
+          ],
+          "tags": [
+            "web-features:window"
           ],
           "support": {
             "chrome": {
@@ -2491,7 +2670,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -2504,6 +2684,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/localStorage",
           "spec_url": "https://html.spec.whatwg.org/multipage/webstorage.html#dom-localstorage-dev",
+          "tags": [
+            "web-features:localstorage"
+          ],
           "support": {
             "chrome": {
               "version_added": "4"
@@ -2511,7 +2694,7 @@
             "chrome_android": "mirror",
             "deno": {
               "version_added": "1.16",
-              "notes": "The key used for the Web Storage bucket is based on various factors. See <a href='https://deno.land/manual/runtime/web_storage_api'>the Deno manual</a>."
+              "notes": "The key used for the Web Storage bucket is based on various factors. See [the Deno manual](https://deno.land/manual/runtime/web_storage_api)."
             },
             "edge": {
               "version_added": "12"
@@ -2537,7 +2720,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -2550,6 +2734,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/location",
           "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-location-interface",
+          "tags": [
+            "web-features:location"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -2570,7 +2757,7 @@
             },
             "firefox": {
               "version_added": "1",
-              "notes": "Before Firefox 57, single quotes contained in URLs were escaped when accessed via URL APIs. See <a href='https://bugzil.la/1386683'>bug 1386683</a>."
+              "notes": "Before Firefox 57, single quotes contained in URLs were escaped when accessed via URL APIs. See [bug 1386683](https://bugzil.la/1386683)."
             },
             "firefox_android": "mirror",
             "ie": {
@@ -2588,7 +2775,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -2600,7 +2788,10 @@
       "locationbar": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/locationbar",
-          "spec_url": "https://html.spec.whatwg.org/multipage/window-object.html#dom-window-locationbar-dev",
+          "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window-locationbar-dev",
+          "tags": [
+            "web-features:barprop"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -2626,7 +2817,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -2639,6 +2831,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/matchMedia",
           "spec_url": "https://drafts.csswg.org/cssom-view/#dom-window-matchmedia",
+          "tags": [
+            "web-features:matchmedia"
+          ],
           "support": {
             "chrome": {
               "version_added": "9"
@@ -2668,7 +2863,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -2680,7 +2876,10 @@
       "menubar": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/menubar",
-          "spec_url": "https://html.spec.whatwg.org/multipage/window-object.html#dom-window-menubar-dev",
+          "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window-menubar-dev",
+          "tags": [
+            "web-features:barprop"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -2706,7 +2905,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -2717,11 +2917,14 @@
       },
       "message_event": {
         "__compat": {
-          "description": "<code>message</code> event",
+          "description": "`message` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/message_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/indices.html#event-message",
             "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onmessage"
+          ],
+          "tags": [
+            "web-features:postmessage"
           ],
           "support": {
             "chrome": {
@@ -2750,7 +2953,8 @@
               "version_added": "4"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -2761,11 +2965,14 @@
       },
       "messageerror_event": {
         "__compat": {
-          "description": "<code>messageerror</code> event",
+          "description": "`messageerror` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/messageerror_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/indices.html#event-messageerror",
             "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onmessageerror"
+          ],
+          "tags": [
+            "web-features:messageerror"
           ],
           "support": {
             "chrome": {
@@ -2788,12 +2995,12 @@
               "version_added": "47"
             },
             "safari": {
-              "version_added": "16.4",
-              "impl_url": "https://webkit.org/b/171216"
+              "version_added": "16.4"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -2806,6 +3013,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/moveBy",
           "spec_url": "https://drafts.csswg.org/cssom-view/#dom-window-moveby",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -2833,7 +3043,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -2846,6 +3057,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/moveTo",
           "spec_url": "https://drafts.csswg.org/cssom-view/#dom-window-moveto",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -2873,7 +3087,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -2883,11 +3098,14 @@
         },
         "relative-multi-screen": {
           "__compat": {
-            "description": "Moved relative to the <a href='https://developer.mozilla.org/docs/Web/API/Window_Management_API/Multi-screen_origin'>Multi-screen origin</a>",
+            "description": "Moved relative to the [Multi-screen origin](https://developer.mozilla.org/docs/Web/API/Window_Management_API/Multi-screen_origin)",
+            "tags": [
+              "web-features:window-management"
+            ],
             "support": {
               "chrome": {
                 "version_added": "100",
-                "notes": "Without the <code>window-management</code> permission, multi-screen coordinates are used, but windows are clamped to their existing displays."
+                "notes": "Without the `window-management` permission, multi-screen coordinates are used, but windows are clamped to their existing displays."
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -2909,7 +3127,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -2943,7 +3162,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -2976,7 +3196,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -2988,7 +3209,10 @@
       "name": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/name",
-          "spec_url": "https://html.spec.whatwg.org/multipage/window-object.html#dom-name-dev",
+          "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-name-dev",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -3002,7 +3226,7 @@
             },
             "firefox": {
               "version_added": "1",
-              "notes": "Before Firefox 86, if a new page from another domain is loaded into a tab, then <code>window.name</code> is not set to an empty string, which can allow some cross-site attacks. See <a href='https://bugzil.la/1685089'>bug 1685089</a> and <a href='https://bugzil.la/444222'>bug 444222</a>."
+              "notes": "Before Firefox 86, if a new page from another domain is loaded into a tab, then `window.name` is not set to an empty string, which can allow some cross-site attacks. See [bug 1685089](https://bugzil.la/1685089) and [bug 444222](https://bugzil.la/444222)."
             },
             "firefox_android": "mirror",
             "ie": {
@@ -3020,7 +3244,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -3033,6 +3258,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/navigation",
           "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigation",
+          "tags": [
+            "web-features:navigation"
+          ],
           "support": {
             "chrome": {
               "version_added": "102"
@@ -3057,7 +3285,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -3070,6 +3299,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/navigator",
           "spec_url": "https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator",
+          "tags": [
+            "web-features:navigator"
+          ],
           "support": {
             "chrome": [
               {
@@ -3142,7 +3374,8 @@
             ],
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -3153,11 +3386,14 @@
       },
       "offline_event": {
         "__compat": {
-          "description": "<code>offline</code> event",
+          "description": "`offline` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/offline_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/indices.html#event-offline",
             "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onoffline"
+          ],
+          "tags": [
+            "web-features:online"
           ],
           "support": {
             "chrome": {
@@ -3186,7 +3422,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -3197,11 +3434,14 @@
       },
       "online_event": {
         "__compat": {
-          "description": "<code>online</code> event",
+          "description": "`online` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/online_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/indices.html#event-online",
             "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-ononline"
+          ],
+          "tags": [
+            "web-features:online"
           ],
           "support": {
             "chrome": {
@@ -3230,7 +3470,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -3243,8 +3484,11 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/open",
           "spec_url": [
-            "https://html.spec.whatwg.org/multipage/window-object.html#dom-open-dev",
+            "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-open-dev",
             "https://drafts.csswg.org/cssom-view/#the-features-argument-to-the-open()-method"
+          ],
+          "tags": [
+            "web-features:window"
           ],
           "support": {
             "chrome": {
@@ -3271,9 +3515,14 @@
             "safari": {
               "version_added": "1"
             },
-            "safari_ios": "mirror",
+            "safari_ios": {
+              "version_added": "1",
+              "partial_implementation": true,
+              "notes": "This method will not function if the `target` parameter is unspecified or set to `_blank`."
+            },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -3283,10 +3532,13 @@
         },
         "features_parameter_attributionsrc": {
           "__compat": {
-            "description": "<code>features</code> parameter accepts <code>\"attributionsrc\"</code> value",
+            "description": "`features` parameter accepts `\"attributionsrc\"` value",
+            "tags": [
+              "web-features:attribution-reporting"
+            ],
             "support": {
               "chrome": {
-                "version_added": "117"
+                "version_added": "125"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -3305,7 +3557,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -3316,7 +3569,10 @@
         },
         "features_parameter_popup": {
           "__compat": {
-            "description": "<code>features</code> parameter accepts <code>\"popup\"</code> value",
+            "description": "`features` parameter accepts `\"popup\"` value",
+            "tags": [
+              "web-features:window"
+            ],
             "support": {
               "chrome": {
                 "version_added": "98"
@@ -3342,7 +3598,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -3353,7 +3610,10 @@
         },
         "once_per_event": {
           "__compat": {
-            "description": "One <code>Window.open()</code> call per event",
+            "description": "One `Window.open()` call per event",
+            "tags": [
+              "web-features:window"
+            ],
             "support": {
               "chrome": {
                 "version_added": "23"
@@ -3381,7 +3641,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -3392,11 +3653,14 @@
         },
         "relative-multi-screen": {
           "__compat": {
-            "description": "Opened relative to the <a href='https://developer.mozilla.org/docs/Web/API/Window_Management_API/Multi-screen_origin'>Multi-screen origin</a>",
+            "description": "Opened relative to the [Multi-screen origin](https://developer.mozilla.org/docs/Web/API/Window_Management_API/Multi-screen_origin)",
+            "tags": [
+              "web-features:window-management"
+            ],
             "support": {
               "chrome": {
                 "version_added": "100",
-                "notes": "Without the <code>window-management</code> permission, multi-screen coordinates are used, but windows are clamped to their existing displays."
+                "notes": "Without the `window-management` permission, multi-screen coordinates are used, but windows are clamped to their existing displays."
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -3417,7 +3681,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -3431,6 +3696,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/opener",
           "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-opener-dev",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -3458,7 +3726,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -3502,7 +3771,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -3513,7 +3783,7 @@
       },
       "orientationchange_event": {
         "__compat": {
-          "description": "<code>orientationchange</code> event",
+          "description": "`orientationchange` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/orientationchange_event",
           "spec_url": "https://compat.spec.whatwg.org/#event-orientationchange",
           "support": {
@@ -3547,7 +3817,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -3559,7 +3830,7 @@
       "originAgentCluster": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/originAgentCluster",
-          "spec_url": "https://html.spec.whatwg.org/multipage/origin.html#origin-keyed-agent-clusters",
+          "spec_url": "https://html.spec.whatwg.org/multipage/browsers.html#origin-keyed-agent-clusters",
           "support": {
             "chrome": {
               "version_added": "90"
@@ -3581,7 +3852,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -3594,6 +3866,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/outerHeight",
           "spec_url": "https://drafts.csswg.org/cssom-view/#dom-window-outerheight",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -3623,7 +3898,8 @@
               "version_added": "3"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -3636,6 +3912,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/outerWidth",
           "spec_url": "https://drafts.csswg.org/cssom-view/#dom-window-outerwidth",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -3665,7 +3944,8 @@
               "version_added": "3"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -3676,9 +3956,12 @@
       },
       "pagehide_event": {
         "__compat": {
-          "description": "<code>pagehide</code> event",
+          "description": "`pagehide` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/pagehide_event",
           "spec_url": "https://html.spec.whatwg.org/multipage/indices.html#event-pagehide",
+          "tags": [
+            "web-features:page-transition-events"
+          ],
           "support": {
             "chrome": {
               "version_added": "3"
@@ -3704,7 +3987,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -3715,18 +3999,21 @@
       },
       "pagereveal_event": {
         "__compat": {
-          "description": "<code>pagereveal</code> event",
+          "description": "`pagereveal` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/pagereveal_event",
           "spec_url": "https://html.spec.whatwg.org/multipage/indices.html#event-pagereveal",
+          "tags": [
+            "web-features:view-transitions"
+          ],
           "support": {
             "chrome": {
-              "version_added": "123",
-              "impl_url": "https://crbug.com/40276316"
+              "version_added": "123"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1860854"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -3736,14 +4023,15 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "18.2"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -3751,9 +4039,12 @@
       },
       "pageshow_event": {
         "__compat": {
-          "description": "<code>pageshow</code> event",
+          "description": "`pageshow` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/pageshow_event",
           "spec_url": "https://html.spec.whatwg.org/multipage/indices.html#event-pageshow",
+          "tags": [
+            "web-features:page-transition-events"
+          ],
           "support": {
             "chrome": {
               "version_added": "3"
@@ -3779,7 +4070,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -3790,18 +4082,21 @@
       },
       "pageswap_event": {
         "__compat": {
-          "description": "<code>pageswap</code> event",
+          "description": "`pageswap` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/pageswap_event",
           "spec_url": "https://html.spec.whatwg.org/multipage/indices.html#event-pageswap",
+          "tags": [
+            "web-features:view-transitions"
+          ],
           "support": {
             "chrome": {
-              "version_added": "124",
-              "impl_url": "https://crbug.com/41495176"
+              "version_added": "124"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1881438"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -3811,14 +4106,15 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "18.2"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -3828,6 +4124,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/parent",
           "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-parent-dev",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -3855,7 +4154,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -3867,7 +4167,10 @@
       "personalbar": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/personalbar",
-          "spec_url": "https://html.spec.whatwg.org/multipage/window-object.html#dom-window-personalbar-dev",
+          "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window-personalbar-dev",
+          "tags": [
+            "web-features:barprop"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -3897,7 +4200,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -3908,16 +4212,19 @@
       },
       "popstate_event": {
         "__compat": {
-          "description": "<code>popstate</code> event",
+          "description": "`popstate` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/popstate_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/indices.html#event-popstate",
             "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onpopstate"
           ],
+          "tags": [
+            "web-features:history"
+          ],
           "support": {
             "chrome": {
               "version_added": "5",
-              "notes": "Before version 34, Chrome would fire a <code>popstate</code> event on page load."
+              "notes": "Before version 34, Chrome would fire a `popstate` event on page load."
             },
             "chrome_android": "mirror",
             "edge": {
@@ -3939,14 +4246,15 @@
             },
             "safari": {
               "version_added": "5",
-              "notes": "Before version 10, Safari would fire a <code>popstate</code> event on page load."
+              "notes": "Before version 10, Safari would fire a `popstate` event on page load."
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37",
-              "notes": "Before version 37, WebView would fire a <code>popstate</code> event on page load."
-            }
+              "notes": "Before version 37, WebView would fire a `popstate` event on page load."
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -3959,6 +4267,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/postMessage",
           "spec_url": "https://html.spec.whatwg.org/multipage/web-messaging.html#dom-window-postmessage-options-dev",
+          "tags": [
+            "web-features:postmessage"
+          ],
           "support": {
             "chrome": {
               "version_added": "2"
@@ -3970,21 +4281,21 @@
             "firefox": {
               "version_added": "3",
               "notes": [
-                "Firefox 8 and up supports sending <code>File</code> and <code>FileList</code> objects between windows. This is only allowed if the recipient's principal is contained within the sender's principal for security reasons.",
-                "Before Firefox 6, the <code>message</code> parameter must be a string. Since Firefox 6, the <code>message</code> parameter is serialized using the <a href='https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Structured_clone_algorithm'>structured clone algorithm</a>. This means you can pass a broad variety of data objects safely to the destination window without having to serialize them yourself."
+                "Firefox 8 and up supports sending `File` and `FileList` objects between windows. This is only allowed if the recipient's principal is contained within the sender's principal for security reasons.",
+                "Before Firefox 6, the `message` parameter must be a string. Since Firefox 6, the `message` parameter is serialized using the [structured clone algorithm](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Structured_clone_algorithm). This means you can pass a broad variety of data objects safely to the destination window without having to serialize them yourself."
               ]
             },
             "firefox_android": "mirror",
             "ie": [
               {
                 "version_added": "10",
-                "notes": "IE10 had an important limitation: see this <a href='https://stackoverflow.com/questions/16226924/is-cross-origin-postmessage-broken-in-ie10'>article</a> for details."
+                "notes": "IE10 had an important limitation: see this [article](https://stackoverflow.com/questions/16226924/is-cross-origin-postmessage-broken-in-ie10) for details."
               },
               {
                 "version_added": "8",
                 "version_removed": "10",
                 "partial_implementation": true,
-                "notes": "Support only for <code>&lt;frame&gt;</code> and <code>&lt;iframe&gt;</code>."
+                "notes": "Support only for `&lt;frame&gt;` and `&lt;iframe&gt;`."
               }
             ],
             "oculus": "mirror",
@@ -4001,7 +4312,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -4009,9 +4321,49 @@
             "deprecated": false
           }
         },
+        "options_includeUserActivation_parameter": {
+          "__compat": {
+            "description": "`options.includeUserActivation` parameter",
+            "support": {
+              "chrome": {
+                "version_added": "72"
+              },
+              "chrome_android": "mirror",
+              "deno": {
+                "version_added": false
+              },
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "nodejs": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": false,
+              "deprecated": false
+            }
+          }
+        },
         "transfer_parameter": {
           "__compat": {
-            "description": "<code>transfer</code> parameter",
+            "description": "`transfer` parameter",
             "support": {
               "chrome": {
                 "version_added": "4"
@@ -4043,7 +4395,8 @@
               "samsunginternet_android": "mirror",
               "webview_android": {
                 "version_added": "≤37"
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -4057,10 +4410,13 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/print",
           "spec_url": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#printing",
+          "tags": [
+            "web-features:print"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
-              "notes": "Starting with Chrome 46, this method is blocked inside an <code>&lt;iframe&gt;</code> unless its sandbox attribute has the value <code>allow-modals</code>."
+              "notes": "Starting with Chrome 46, this method is blocked inside an `&lt;iframe&gt;` unless its sandbox attribute has the value `allow-modals`."
             },
             "chrome_android": "mirror",
             "edge": {
@@ -4078,18 +4434,19 @@
             "oculus": "mirror",
             "opera": {
               "version_added": "6",
-              "notes": "Starting with Opera 33, this method is blocked inside an <code>&lt;iframe&gt;</code> unless its sandbox attribute has the value <code>allow-modals</code>."
+              "notes": "Starting with Opera 33, this method is blocked inside an `&lt;iframe&gt;` unless its sandbox attribute has the value `allow-modals`."
             },
             "opera_android": {
               "version_added": "10.1",
-              "notes": "Starting with Opera 33, this method is blocked inside an <code>&lt;iframe&gt;</code> unless its sandbox attribute has the value <code>allow-modals</code>."
+              "notes": "Starting with Opera 33, this method is blocked inside an `&lt;iframe&gt;` unless its sandbox attribute has the value `allow-modals`."
             },
             "safari": {
               "version_added": "1.1"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -4102,10 +4459,13 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/prompt",
           "spec_url": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-prompt-dev",
+          "tags": [
+            "web-features:alerts"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
-              "notes": "Starting with Chrome 46, this method is blocked inside an <code>&lt;iframe&gt;</code> unless its sandbox attribute has the value <code>allow-modals</code>."
+              "notes": "Starting with Chrome 46, this method is blocked inside an `&lt;iframe&gt;` unless its sandbox attribute has the value `allow-modals`."
             },
             "chrome_android": "mirror",
             "deno": {
@@ -4116,28 +4476,29 @@
             },
             "firefox": {
               "version_added": "1",
-              "notes": "Firefox strips newline characters from the prompt response; see <a href='https://bugzil.la/1716229'>bug 1716229</a>."
+              "notes": "Firefox strips newline characters from the prompt response; see [bug 1716229](https://bugzil.la/1716229)."
             },
             "firefox_android": "mirror",
             "ie": {
               "version_added": "4",
-              "notes": "This function has no effect in the Modern UI/Metro version of Internet Explorer for Windows 8. It does not display a prompt to the user, and always returns <code>undefined</code>. It is not clear whether this is a bug or intended behavior. Desktop versions of IE do implement this function."
+              "notes": "This function has no effect in the Modern UI/Metro version of Internet Explorer for Windows 8. It does not display a prompt to the user, and always returns `undefined`. It is not clear whether this is a bug or intended behavior. Desktop versions of IE do implement this function."
             },
             "oculus": "mirror",
             "opera": {
               "version_added": "3",
-              "notes": "Starting with Opera 33, this method is blocked inside an <code>&lt;iframe&gt;</code> unless its sandbox attribute has the value <code>allow-modals</code>."
+              "notes": "Starting with Opera 33, this method is blocked inside an `&lt;iframe&gt;` unless its sandbox attribute has the value `allow-modals`."
             },
             "opera_android": {
               "version_added": "10.1",
-              "notes": "Starting with Opera 33, this method is blocked inside an <code>&lt;iframe&gt;</code> unless its sandbox attribute has the value <code>allow-modals</code>."
+              "notes": "Starting with Opera 33, this method is blocked inside an `&lt;iframe&gt;` unless its sandbox attribute has the value `allow-modals`."
             },
             "safari": {
               "version_added": "1"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -4150,12 +4511,16 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/queryLocalFonts",
           "spec_url": "https://wicg.github.io/local-font-access/#dom-window-querylocalfonts",
+          "tags": [
+            "web-features:local-fonts"
+          ],
           "support": {
             "chrome": {
               "version_added": "103"
             },
             "chrome_android": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://crbug.com/40840834"
             },
             "edge": "mirror",
             "firefox": {
@@ -4175,7 +4540,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -4186,7 +4552,7 @@
       },
       "rejectionhandled_event": {
         "__compat": {
-          "description": "<code>rejectionhandled</code> event",
+          "description": "`rejectionhandled` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/rejectionhandled_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/webappapis.html#unhandled-promise-rejections",
@@ -4218,7 +4584,8 @@
               "version_added": "11.3"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -4258,7 +4625,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -4271,6 +4639,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/requestAnimationFrame",
           "spec_url": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-animationframeprovider-requestanimationframe",
+          "tags": [
+            "web-features:request-animation-frame"
+          ],
           "support": {
             "chrome": [
               {
@@ -4284,18 +4655,18 @@
             "chrome_android": "mirror",
             "edge": {
               "version_added": "12",
-              "notes": "Before version 17, Edge does not reliably fire <code>requestAnimationFrame</code> before the paint cycle."
+              "notes": "Before version 17, Edge does not reliably fire `requestAnimationFrame` before the paint cycle."
             },
             "firefox": [
               {
                 "version_added": "23",
-                "notes": "Callback parameter is a <code>DOMHighResTimestamp</code>. This means ten microsecond precision and zero time as <code>performance.now()</code>."
+                "notes": "Callback parameter is a `DOMHighResTimestamp`. This means ten microsecond precision and zero time as `performance.now()`."
               },
               {
                 "prefix": "moz",
                 "version_added": "11",
                 "version_removed": "42",
-                "notes": "Callback parameter is a <code>DOMTimestamp</code>. This means millisecond precision and zero time as <code>Date.now()</code>."
+                "notes": "Callback parameter is a `DOMTimestamp`. This means millisecond precision and zero time as `Date.now()`."
               },
               {
                 "prefix": "moz",
@@ -4316,7 +4687,7 @@
             ],
             "ie": {
               "version_added": "10",
-              "notes": "Internet Explorer does not reliably fire <code>requestAnimationFrame</code> before the paint cycle."
+              "notes": "Internet Explorer does not reliably fire `requestAnimationFrame` before the paint cycle."
             },
             "oculus": "mirror",
             "opera": "mirror",
@@ -4340,7 +4711,8 @@
                 "prefix": "webkit",
                 "version_added": "≤37"
               }
-            ]
+            ],
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -4374,14 +4746,17 @@
               "version_added": false
             },
             "safari": {
-              "version_added": false
+              "prefix": "webkit",
+              "version_added": "6",
+              "version_removed": "8"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
             "webview_android": {
               "prefix": "webkit",
               "version_added": "37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -4394,6 +4769,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/requestIdleCallback",
           "spec_url": "https://w3c.github.io/requestidlecallback/#the-requestidlecallback-method",
+          "tags": [
+            "web-features:requestidlecallback"
+          ],
           "support": {
             "chrome": {
               "version_added": "47"
@@ -4416,7 +4794,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -4427,22 +4806,25 @@
       },
       "resize_event": {
         "__compat": {
-          "description": "<code>resize</code> event",
+          "description": "`resize` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/resize_event",
           "spec_url": "https://drafts.csswg.org/cssom-view/#eventdef-window-resize",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
-              "notes": "Chrome does not fire a <code>resize</code> event on page load."
+              "notes": "Chrome does not fire a `resize` event on page load."
             },
             "chrome_android": "mirror",
             "edge": {
               "version_added": "12",
-              "notes": "Before Edge 79, Edge fired a <code>resize</code> event on page load. This is no longer the case."
+              "notes": "Before Edge 79, Edge fired a `resize` event on page load. This is no longer the case."
             },
             "firefox": {
               "version_added": "1",
-              "notes": "Before Firefox 68, Firefox fired a <code>resize</code> event on page load. This is no longer the case."
+              "notes": "Before Firefox 68, Firefox fired a `resize` event on page load. This is no longer the case."
             },
             "firefox_android": "mirror",
             "ie": {
@@ -4451,11 +4833,11 @@
             "oculus": "mirror",
             "opera": {
               "version_added": "7",
-              "notes": "Opera does not fire a <code>resize</code> event on page load."
+              "notes": "Opera does not fire a `resize` event on page load."
             },
             "opera_android": {
               "version_added": "10.1",
-              "notes": "Opera does not fire a <code>resize</code> event on page load."
+              "notes": "Opera does not fire a `resize` event on page load."
             },
             "safari": {
               "version_added": "1.1"
@@ -4464,8 +4846,9 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "1",
-              "notes": "WebView does not fire a <code>resize</code> event on page load."
-            }
+              "notes": "WebView does not fire a `resize` event on page load."
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -4478,6 +4861,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/resizeBy",
           "spec_url": "https://drafts.csswg.org/cssom-view/#dom-window-resizeby",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -4488,7 +4874,7 @@
             },
             "firefox": {
               "version_added": "1",
-              "notes": "Since Firefox 7, it's no longer possible for a web site to change the default size of a window in a browser if the window wasn't created by <code>window.open</code> or contains more than one tab. <a href='https://bugzil.la/565541#c24'>See here</a> for more details."
+              "notes": "Since Firefox 7, it's no longer possible for a web site to change the default size of a window in a browser if the window wasn't created by `window.open` or contains more than one tab. [See here](https://bugzil.la/565541#c24) for more details."
             },
             "firefox_android": {
               "version_added": "4"
@@ -4508,7 +4894,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -4521,6 +4908,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/resizeTo",
           "spec_url": "https://drafts.csswg.org/cssom-view/#dom-window-resizeto",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -4531,7 +4921,7 @@
             },
             "firefox": {
               "version_added": "1",
-              "notes": "Since Firefox 7, it's no longer possible for a web site to change the default size of a window in a browser if the window wasn't created by <code>window.open</code> or contains more than one tab. <a href='https://bugzil.la/565541#c24'>See here</a> for more details."
+              "notes": "Since Firefox 7, it's no longer possible for a web site to change the default size of a window in a browser if the window wasn't created by `window.open` or contains more than one tab. [See here](https://bugzil.la/565541#c24) for more details."
             },
             "firefox_android": {
               "version_added": "4"
@@ -4551,7 +4941,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -4562,7 +4953,7 @@
       },
       "resolveLocalFileSystemURL": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/resolveLocalFileSystemURL",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/File_and_Directory_Entries_API#resolvelocalfilesystemurl()",
           "support": {
             "chrome": {
               "prefix": "webkit",
@@ -4589,7 +4980,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -4602,6 +4994,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/screen",
           "spec_url": "https://drafts.csswg.org/cssom-view/#dom-window-screen",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -4629,7 +5024,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -4642,6 +5038,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/screenLeft",
           "spec_url": "https://drafts.csswg.org/cssom-view/#dom-window-screenleft",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -4669,7 +5068,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -4679,7 +5079,10 @@
         },
         "relative-multi-screen": {
           "__compat": {
-            "description": "Relative to the <a href='https://developer.mozilla.org/docs/Web/API/Window_Management_API/Multi-screen_origin'>Multi-screen origin</a>",
+            "description": "Relative to the [Multi-screen origin](https://developer.mozilla.org/docs/Web/API/Window_Management_API/Multi-screen_origin)",
+            "tags": [
+              "web-features:window-management"
+            ],
             "support": {
               "chrome": {
                 "version_added": "100"
@@ -4703,7 +5106,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -4717,6 +5121,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/screenTop",
           "spec_url": "https://drafts.csswg.org/cssom-view/#dom-window-screentop",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -4744,7 +5151,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -4754,7 +5162,10 @@
         },
         "relative-multi-screen": {
           "__compat": {
-            "description": "Relative to the <a href='https://developer.mozilla.org/docs/Web/API/Window_Management_API/Multi-screen_origin'>Multi-screen origin</a>",
+            "description": "Relative to the [Multi-screen origin](https://developer.mozilla.org/docs/Web/API/Window_Management_API/Multi-screen_origin)",
+            "tags": [
+              "web-features:window-management"
+            ],
             "support": {
               "chrome": {
                 "version_added": "100"
@@ -4778,7 +5189,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -4792,6 +5204,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/screenX",
           "spec_url": "https://drafts.csswg.org/cssom-view/#dom-window-screenx",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -4802,7 +5217,7 @@
             },
             "firefox": {
               "version_added": "1",
-              "notes": "Before Firefox 28, Gecko was using device pixels instead of CSS pixels; in other words, it was assuming a value of <code>screenPixelsPerCSSPixel</code> of 1 for any device."
+              "notes": "Before Firefox 28, Gecko was using device pixels instead of CSS pixels; in other words, it was assuming a value of `screenPixelsPerCSSPixel` of 1 for any device."
             },
             "firefox_android": "mirror",
             "ie": {
@@ -4820,7 +5235,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -4830,7 +5246,10 @@
         },
         "relative-multi-screen": {
           "__compat": {
-            "description": "Relative to the <a href='https://developer.mozilla.org/docs/Web/API/Window_Management_API/Multi-screen_origin'>Multi-screen origin</a>",
+            "description": "Relative to the [Multi-screen origin](https://developer.mozilla.org/docs/Web/API/Window_Management_API/Multi-screen_origin)",
+            "tags": [
+              "web-features:window-management"
+            ],
             "support": {
               "chrome": {
                 "version_added": "100"
@@ -4854,7 +5273,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -4868,6 +5288,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/screenY",
           "spec_url": "https://drafts.csswg.org/cssom-view/#dom-window-screeny",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -4878,7 +5301,7 @@
             },
             "firefox": {
               "version_added": "1",
-              "notes": "Before Firefox 28, Gecko was using device pixels instead of CSS pixels; in other words, it was assuming a value of <code>screenPixelsPerCSSPixel</code> of 1 for any device."
+              "notes": "Before Firefox 28, Gecko was using device pixels instead of CSS pixels; in other words, it was assuming a value of `screenPixelsPerCSSPixel` of 1 for any device."
             },
             "firefox_android": "mirror",
             "ie": {
@@ -4896,7 +5319,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -4906,7 +5330,10 @@
         },
         "relative-multi-screen": {
           "__compat": {
-            "description": "Relative to the <a href='https://developer.mozilla.org/docs/Web/API/Window_Management_API/Multi-screen_origin'>Multi-screen origin</a>",
+            "description": "Relative to the [Multi-screen origin](https://developer.mozilla.org/docs/Web/API/Window_Management_API/Multi-screen_origin)",
+            "tags": [
+              "web-features:window-management"
+            ],
             "support": {
               "chrome": {
                 "version_added": "100"
@@ -4930,7 +5357,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -4944,6 +5372,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/scroll",
           "spec_url": "https://drafts.csswg.org/cssom-view/#dom-window-scroll",
+          "tags": [
+            "web-features:scroll-elements"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -4971,7 +5402,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -4981,7 +5413,10 @@
         },
         "options_behavior_parameter": {
           "__compat": {
-            "description": "<code>options.behavior</code> parameter",
+            "description": "`options.behavior` parameter",
+            "tags": [
+              "web-features:scroll-elements"
+            ],
             "support": {
               "chrome": {
                 "version_added": "61"
@@ -5000,11 +5435,12 @@
               "opera_android": "mirror",
               "safari": {
                 "version_added": "14",
-                "notes": "Safari does not have support for the <code>smooth</code> scroll behavior."
+                "notes": "Safari does not have support for the `smooth` scroll behavior."
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -5015,7 +5451,10 @@
         },
         "options_left_parameter": {
           "__compat": {
-            "description": "<code>options.left</code> parameter",
+            "description": "`options.left` parameter",
+            "tags": [
+              "web-features:scroll-elements"
+            ],
             "support": {
               "chrome": {
                 "version_added": "41"
@@ -5037,7 +5476,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -5048,7 +5488,10 @@
         },
         "options_top_parameter": {
           "__compat": {
-            "description": "<code>options.top</code> parameter",
+            "description": "`options.top` parameter",
+            "tags": [
+              "web-features:scroll-elements"
+            ],
             "support": {
               "chrome": {
                 "version_added": "41"
@@ -5070,7 +5513,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -5083,7 +5527,10 @@
       "scrollbars": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/scrollbars",
-          "spec_url": "https://html.spec.whatwg.org/multipage/window-object.html#dom-window-scrollbars-dev",
+          "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window-scrollbars-dev",
+          "tags": [
+            "web-features:barprop"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -5113,7 +5560,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -5126,6 +5574,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/scrollBy",
           "spec_url": "https://drafts.csswg.org/cssom-view/#dom-window-scrollby",
+          "tags": [
+            "web-features:scroll-elements"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -5153,7 +5604,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -5163,7 +5615,10 @@
         },
         "options_behavior_parameter": {
           "__compat": {
-            "description": "<code>options.behavior</code> parameter",
+            "description": "`options.behavior` parameter",
+            "tags": [
+              "web-features:scroll-elements"
+            ],
             "support": {
               "chrome": {
                 "version_added": "61"
@@ -5182,11 +5637,12 @@
               "opera_android": "mirror",
               "safari": {
                 "version_added": "14",
-                "notes": "Safari does not have support for the <code>smooth</code> scroll behavior."
+                "notes": "Safari does not have support for the `smooth` scroll behavior."
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -5197,7 +5653,10 @@
         },
         "options_left_parameter": {
           "__compat": {
-            "description": "<code>options.left</code> parameter",
+            "description": "`options.left` parameter",
+            "tags": [
+              "web-features:scroll-elements"
+            ],
             "support": {
               "chrome": {
                 "version_added": "41"
@@ -5219,7 +5678,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -5230,7 +5690,10 @@
         },
         "options_top_parameter": {
           "__compat": {
-            "description": "<code>options.top</code> parameter",
+            "description": "`options.top` parameter",
+            "tags": [
+              "web-features:scroll-elements"
+            ],
             "support": {
               "chrome": {
                 "version_added": "41"
@@ -5252,7 +5715,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -5286,7 +5750,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -5319,7 +5784,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -5352,7 +5818,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -5385,7 +5852,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -5394,10 +5862,93 @@
           }
         }
       },
+      "scrollsnapchange_event": {
+        "__compat": {
+          "description": "`scrollsnapchange` event",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/scrollsnapchange_event",
+          "spec_url": "https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchange",
+          "tags": [
+            "web-features:scroll-snap-events"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "129"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1843961"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": true,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
+      "scrollsnapchanging_event": {
+        "__compat": {
+          "description": "`scrollsnapchanging` event",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/scrollsnapchanging_event",
+          "spec_url": "https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchanging",
+          "tags": [
+            "web-features:scroll-snap-events"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": "129"
+            },
+            "chrome_android": "mirror",
+            "edge": "mirror",
+            "firefox": {
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1843961"
+            },
+            "firefox_android": "mirror",
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": "mirror",
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": "mirror",
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": true,
+            "standard_track": true,
+            "deprecated": false
+          }
+        }
+      },
       "scrollTo": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/scrollTo",
           "spec_url": "https://drafts.csswg.org/cssom-view/#dom-window-scrollto",
+          "tags": [
+            "web-features:scroll-elements"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -5425,7 +5976,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -5435,7 +5987,10 @@
         },
         "options_behavior_parameter": {
           "__compat": {
-            "description": "<code>options.behavior</code> parameter",
+            "description": "`options.behavior` parameter",
+            "tags": [
+              "web-features:scroll-elements"
+            ],
             "support": {
               "chrome": {
                 "version_added": "61"
@@ -5454,11 +6009,12 @@
               "opera_android": "mirror",
               "safari": {
                 "version_added": "14",
-                "notes": "Safari does not have support for the <code>smooth</code> scroll behavior."
+                "notes": "Before version 15.4, Safari did not have support for the `smooth` scroll behavior."
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -5469,7 +6025,10 @@
         },
         "options_left_parameter": {
           "__compat": {
-            "description": "<code>options.left</code> parameter",
+            "description": "`options.left` parameter",
+            "tags": [
+              "web-features:scroll-elements"
+            ],
             "support": {
               "chrome": {
                 "version_added": "41"
@@ -5491,7 +6050,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -5502,7 +6062,10 @@
         },
         "options_top_parameter": {
           "__compat": {
-            "description": "<code>options.top</code> parameter",
+            "description": "`options.top` parameter",
+            "tags": [
+              "web-features:scroll-elements"
+            ],
             "support": {
               "chrome": {
                 "version_added": "41"
@@ -5524,7 +6087,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -5538,6 +6102,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/scrollX",
           "spec_url": "https://drafts.csswg.org/cssom-view/#dom-window-scrollx",
+          "tags": [
+            "web-features:scroll-elements"
+          ],
           "support": {
             "chrome": [
               {
@@ -5602,7 +6169,8 @@
             ],
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -5613,6 +6181,9 @@
         "subpixel_precision": {
           "__compat": {
             "description": "Subpixel precision",
+            "tags": [
+              "web-features:scroll-elements"
+            ],
             "support": {
               "chrome": {
                 "version_added": "40"
@@ -5636,7 +6207,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -5650,6 +6222,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/scrollY",
           "spec_url": "https://drafts.csswg.org/cssom-view/#dom-window-scrolly",
+          "tags": [
+            "web-features:scroll-elements"
+          ],
           "support": {
             "chrome": [
               {
@@ -5714,7 +6289,8 @@
             ],
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -5725,6 +6301,9 @@
         "subpixel_precision": {
           "__compat": {
             "description": "Subpixel precision",
+            "tags": [
+              "web-features:scroll-elements"
+            ],
             "support": {
               "chrome": {
                 "version_added": "40"
@@ -5748,7 +6327,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -5761,7 +6341,10 @@
       "self": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/self",
-          "spec_url": "https://html.spec.whatwg.org/multipage/window-object.html#dom-self-dev",
+          "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-self-dev",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -5791,7 +6374,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -5804,6 +6388,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/sessionStorage",
           "spec_url": "https://html.spec.whatwg.org/multipage/webstorage.html#dom-sessionstorage-dev",
+          "tags": [
+            "web-features:localstorage"
+          ],
           "support": {
             "chrome": {
               "version_added": "4"
@@ -5836,7 +6423,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -5867,7 +6455,7 @@
             "nodejs": {
               "version_added": "0.10.0",
               "partial_implementation": true,
-              "notes": "Returns an <code>Immediate</code> object instead of the <code>immediateID</code>."
+              "notes": "Returns an `Immediate` object instead of the `immediateID`."
             },
             "oculus": "mirror",
             "opera": "mirror",
@@ -5877,7 +6465,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -5910,7 +6499,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -5923,6 +6513,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/sharedStorage",
           "spec_url": "https://wicg.github.io/shared-storage/#dom-window-sharedstorage",
+          "tags": [
+            "web-features:shared-storage"
+          ],
           "support": {
             "chrome": {
               "version_added": "117"
@@ -5944,7 +6537,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -5955,14 +6549,17 @@
       },
       "showDirectoryPicker": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/web/api/window/showdirectorypicker",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/showDirectoryPicker",
           "spec_url": "https://wicg.github.io/file-system-access/#api-showdirectorypicker",
+          "tags": [
+            "web-features:file-system-access"
+          ],
           "support": {
             "chrome": {
               "version_added": "86"
             },
             "chrome_android": {
-              "version_added": false
+              "version_added": "132"
             },
             "edge": "mirror",
             "firefox": {
@@ -5980,7 +6577,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -6024,7 +6622,8 @@
               "version_added": false
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -6035,14 +6634,17 @@
       },
       "showOpenFilePicker": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/web/api/window/showopenfilepicker",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/showOpenFilePicker",
           "spec_url": "https://wicg.github.io/file-system-access/#api-showopenfilepicker",
+          "tags": [
+            "web-features:file-system-access"
+          ],
           "support": {
             "chrome": {
               "version_added": "86"
             },
             "chrome_android": {
-              "version_added": false
+              "version_added": "132"
             },
             "edge": "mirror",
             "firefox": {
@@ -6060,7 +6662,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -6071,14 +6674,17 @@
       },
       "showSaveFilePicker": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/web/api/window/showsavefilepicker",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/showSaveFilePicker",
           "spec_url": "https://wicg.github.io/file-system-access/#api-showsavefilepicker",
+          "tags": [
+            "web-features:file-system-access"
+          ],
           "support": {
             "chrome": {
               "version_added": "86"
             },
             "chrome_android": {
-              "version_added": false
+              "version_added": "132"
             },
             "edge": "mirror",
             "firefox": {
@@ -6096,7 +6702,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -6134,7 +6741,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -6146,7 +6754,10 @@
       "speechSynthesis": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/speechSynthesis",
-          "spec_url": "https://wicg.github.io/speech-api/#tts-section",
+          "spec_url": "https://webaudio.github.io/web-speech-api/#tts-section",
+          "tags": [
+            "web-features:speech-synthesis"
+          ],
           "support": {
             "chrome": {
               "version_added": "33"
@@ -6176,8 +6787,9 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false,
-              "impl_url": "https://crbug.com/487255"
-            }
+              "impl_url": "https://crbug.com/40417848"
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -6189,7 +6801,7 @@
       "status": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/status",
-          "spec_url": "https://html.spec.whatwg.org/multipage/window-object.html#dom-window-status",
+          "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window-status",
           "support": {
             "chrome": {
               "version_added": "1"
@@ -6217,7 +6829,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -6229,7 +6842,10 @@
       "statusbar": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/statusbar",
-          "spec_url": "https://html.spec.whatwg.org/multipage/window-object.html#dom-window-statusbar-dev",
+          "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window-statusbar-dev",
+          "tags": [
+            "web-features:barprop"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -6255,7 +6871,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -6267,7 +6884,10 @@
       "stop": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/stop",
-          "spec_url": "https://html.spec.whatwg.org/multipage/window-object.html#dom-window-stop-dev",
+          "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window-stop-dev",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -6297,7 +6917,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -6308,11 +6929,14 @@
       },
       "storage_event": {
         "__compat": {
-          "description": "<code>storage</code> event",
+          "description": "`storage` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/storage_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/indices.html#event-storage",
             "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onstorage"
+          ],
+          "tags": [
+            "web-features:localstorage"
           ],
           "support": {
             "chrome": {
@@ -6341,7 +6965,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -6379,7 +7004,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -6391,7 +7017,10 @@
       "toolbar": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/toolbar",
-          "spec_url": "https://html.spec.whatwg.org/multipage/window-object.html#dom-window-toolbar-dev",
+          "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window-toolbar-dev",
+          "tags": [
+            "web-features:barprop"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -6417,7 +7046,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -6430,6 +7060,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/top",
           "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-top-dev",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -6462,7 +7095,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -6473,7 +7107,7 @@
       },
       "unhandledrejection_event": {
         "__compat": {
-          "description": "<code>unhandledrejection</code> event",
+          "description": "`unhandledrejection` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/unhandledrejection_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/indices.html#event-unhandledrejection",
@@ -6490,7 +7124,7 @@
             "edge": "mirror",
             "firefox": {
               "version_added": "69",
-              "notes": "<code>event.preventDefault()</code> does not prevent Firefox from logging the error message in the console, see <a href='https://bugzil.la/1642147'>bug 1642147</a>."
+              "notes": "`event.preventDefault()` does not prevent Firefox from logging the error message in the console, see [bug 1642147](https://bugzil.la/1642147)."
             },
             "firefox_android": "mirror",
             "ie": {
@@ -6506,7 +7140,8 @@
               "version_added": "11.3"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -6517,7 +7152,7 @@
       },
       "unload_event": {
         "__compat": {
-          "description": "<code>unload</code> event",
+          "description": "`unload` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/unload_event",
           "spec_url": [
             "https://html.spec.whatwg.org/multipage/indices.html#event-unload",
@@ -6555,7 +7190,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -6566,7 +7202,7 @@
       },
       "updateCommands": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/updateCommands",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window",
           "support": {
             "chrome": {
               "version_added": false
@@ -6588,7 +7224,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -6627,7 +7264,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -6638,8 +7276,11 @@
       },
       "vrdisplayactivate_event": {
         "__compat": {
-          "description": "<code>vrdisplayactivate</code> event",
+          "description": "`vrdisplayactivate` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/vrdisplayactivate_event",
+          "tags": [
+            "web-features:webvr"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -6672,7 +7313,8 @@
               }
             ],
             "firefox_android": {
-              "version_added": "55"
+              "version_added": "55",
+              "version_removed": "98"
             },
             "ie": {
               "version_added": false
@@ -6685,7 +7327,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -6696,8 +7339,11 @@
       },
       "vrdisplayconnect_event": {
         "__compat": {
-          "description": "<code>vrdisplayconnect</code> event",
+          "description": "`vrdisplayconnect` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/vrdisplayconnect_event",
+          "tags": [
+            "web-features:webvr"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -6730,7 +7376,8 @@
               }
             ],
             "firefox_android": {
-              "version_added": "55"
+              "version_added": "55",
+              "version_removed": "98"
             },
             "ie": {
               "version_added": false
@@ -6747,7 +7394,8 @@
               "version_removed": "13.0",
               "notes": "Supported on Samsung Internet for GearVR."
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -6758,8 +7406,11 @@
       },
       "vrdisplaydeactivate_event": {
         "__compat": {
-          "description": "<code>vrdisplaydeactivate</code> event",
+          "description": "`vrdisplaydeactivate` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/vrdisplaydeactivate_event",
+          "tags": [
+            "web-features:webvr"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -6792,7 +7443,8 @@
               }
             ],
             "firefox_android": {
-              "version_added": "55"
+              "version_added": "55",
+              "version_removed": "98"
             },
             "ie": {
               "version_added": false
@@ -6805,7 +7457,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -6816,80 +7469,11 @@
       },
       "vrdisplaydisconnect_event": {
         "__compat": {
-          "description": "<code>vrdisplaydisconnect</code> event",
+          "description": "`vrdisplaydisconnect` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/vrdisplaydisconnect_event",
-          "support": {
-            "chrome": {
-              "version_added": false
-            },
-            "chrome_android": {
-              "version_added": "56",
-              "notes": [
-                "Chrome for Android 56 supports only Google Daydream View.",
-                "Chrome for Android 57 adds support for Google Cardboard."
-              ]
-            },
-            "edge": {
-              "version_added": "15",
-              "version_removed": "79"
-            },
-            "firefox": [
-              {
-                "version_added": "98",
-                "flags": [
-                  {
-                    "type": "preference",
-                    "name": "dom.vr.enabled",
-                    "value_to_set": "true"
-                  }
-                ]
-              },
-              {
-                "version_added": "64",
-                "version_removed": "98",
-                "notes": "macOS support was enabled in Firefox 64."
-              },
-              {
-                "version_added": "55",
-                "version_removed": "98",
-                "notes": "Windows support was enabled in Firefox 55."
-              }
-            ],
-            "firefox_android": {
-              "version_added": "55"
-            },
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": {
-              "version_added": false
-            },
-            "safari": {
-              "version_added": false
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": {
-              "version_added": "6.0",
-              "version_removed": "13.0",
-              "notes": "Supported on Samsung Internet for GearVR."
-            },
-            "webview_android": {
-              "version_added": false
-            }
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": false,
-            "deprecated": true
-          }
-        }
-      },
-      "vrdisplaypresentchange_event": {
-        "__compat": {
-          "description": "<code>vrdisplaypresentchange</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/vrdisplaypresentchange_event",
+          "tags": [
+            "web-features:webvr"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -6929,7 +7513,8 @@
               }
             ],
             "firefox_android": {
-              "version_added": "55"
+              "version_added": "55",
+              "version_removed": "98"
             },
             "ie": {
               "version_added": false
@@ -6950,7 +7535,86 @@
             },
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
+          },
+          "status": {
+            "experimental": false,
+            "standard_track": false,
+            "deprecated": true
+          }
+        }
+      },
+      "vrdisplaypresentchange_event": {
+        "__compat": {
+          "description": "`vrdisplaypresentchange` event",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/vrdisplaypresentchange_event",
+          "tags": [
+            "web-features:webvr"
+          ],
+          "support": {
+            "chrome": {
+              "version_added": false
+            },
+            "chrome_android": {
+              "version_added": "56",
+              "version_removed": "80",
+              "notes": [
+                "Chrome for Android 56 supports only Google Daydream View.",
+                "Chrome for Android 57 adds support for Google Cardboard."
+              ]
+            },
+            "edge": {
+              "version_added": "15",
+              "version_removed": "79"
+            },
+            "firefox": [
+              {
+                "version_added": "98",
+                "flags": [
+                  {
+                    "type": "preference",
+                    "name": "dom.vr.enabled",
+                    "value_to_set": "true"
+                  }
+                ]
+              },
+              {
+                "version_added": "64",
+                "version_removed": "98",
+                "notes": "macOS support was enabled in Firefox 64."
+              },
+              {
+                "version_added": "55",
+                "version_removed": "98",
+                "notes": "Windows support was enabled in Firefox 55."
+              }
+            ],
+            "firefox_android": {
+              "version_added": "55",
+              "version_removed": "98"
+            },
+            "ie": {
+              "version_added": false
+            },
+            "oculus": "mirror",
+            "opera": "mirror",
+            "opera_android": {
+              "version_added": false
+            },
+            "safari": {
+              "version_added": false
+            },
+            "safari_ios": "mirror",
+            "samsunginternet_android": {
+              "version_added": "6.0",
+              "version_removed": "13.0",
+              "notes": "Supported on Samsung Internet for GearVR."
+            },
+            "webview_android": {
+              "version_added": false
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -6992,7 +7656,8 @@
             "webview_android": {
               "version_added": "≤37",
               "version_removed": "39"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -7034,7 +7699,8 @@
             "webview_android": {
               "version_added": "≤37",
               "version_removed": "39"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -7046,7 +7712,10 @@
       "window": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/Window/window",
-          "spec_url": "https://html.spec.whatwg.org/multipage/window-object.html#dom-window-dev",
+          "spec_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-window-dev",
+          "tags": [
+            "web-features:window"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -7076,7 +7745,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

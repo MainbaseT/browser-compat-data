@@ -28,7 +28,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -61,7 +62,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -100,7 +102,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -137,7 +140,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -150,6 +154,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ShadowRoot/delegatesFocus",
           "spec_url": "https://dom.spec.whatwg.org/#shadowroot-delegates-focus",
+          "tags": [
+            "web-features:shadow-dom"
+          ],
           "support": {
             "chrome": {
               "version_added": "53"
@@ -171,7 +178,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -186,7 +194,7 @@
           "support": {
             "chrome": {
               "version_added": "53",
-              "notes": "Before Chrome 66, this method returned <code>null</code> when the element was a child of a host node. See <a href='https://crbug.com/759947'>bug 759947</a>."
+              "notes": "Before Chrome 66, this method returned `null` when the element was a child of a host node. See [bug 40537452](https://crbug.com/40537452)."
             },
             "chrome_android": "mirror",
             "edge": {
@@ -207,7 +215,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -222,7 +231,7 @@
           "support": {
             "chrome": {
               "version_added": "53",
-              "notes": "Before Chrome 66, this method returned <code>null</code> when the element was a child of a host node. See <a href='https://crbug.com/759947'>bug 759947</a>."
+              "notes": "Before Chrome 66, this method returned `null` when the element was a child of a host node. See [bug 40537452](https://crbug.com/40537452)."
             },
             "chrome_android": "mirror",
             "edge": {
@@ -247,7 +256,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -297,7 +307,8 @@
               ]
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -310,6 +321,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ShadowRoot/getAnimations",
           "spec_url": "https://drafts.csswg.org/web-animations-1/#dom-documentorshadowroot-getanimations",
+          "tags": [
+            "web-features:web-animations"
+          ],
           "support": {
             "chrome": {
               "version_added": "84"
@@ -331,7 +345,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -342,7 +357,11 @@
       },
       "getHTML": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/ShadowRoot/getHTML",
           "spec_url": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-gethtml",
+          "tags": [
+            "web-features:gethtml"
+          ],
           "support": {
             "chrome": {
               "version_added": "125"
@@ -350,8 +369,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false,
-              "impl_url": "https://bugzil.la/1886630"
+              "version_added": "128"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -361,15 +379,15 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false,
-              "impl_url": "https://webkit.org/b/271343"
+              "version_added": "18"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -398,7 +416,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -435,7 +454,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -469,12 +489,58 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
             "standard_track": true,
             "deprecated": false
+          }
+        },
+        "accepts_TrustedHTML": {
+          "__compat": {
+            "description": "Can be set with a `TrustedHTML` instance",
+            "spec_url": "https://w3c.github.io/trusted-types/dist/spec/#dom-xss-injection-sinks",
+            "tags": [
+              "web-features:trusted-types"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "83"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "135",
+                "flags": [
+                  {
+                    "type": "preference",
+                    "name": "dom.security.trusted_types.enabled",
+                    "value_to_set": "true"
+                  }
+                ]
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
           }
         }
       },
@@ -506,7 +572,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -531,7 +598,8 @@
             },
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1463402"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -545,7 +613,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -584,7 +653,8 @@
               "version_added": false
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -595,7 +665,11 @@
       },
       "serializable": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/ShadowRoot/serializable",
           "spec_url": "https://dom.spec.whatwg.org/#dom-shadowroot-serializable",
+          "tags": [
+            "web-features:shadow-dom"
+          ],
           "support": {
             "chrome": {
               "version_added": "125"
@@ -603,7 +677,7 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "128"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -613,14 +687,15 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": "18"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -628,7 +703,11 @@
       },
       "setHTMLUnsafe": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/ShadowRoot/setHTMLUnsafe",
           "spec_url": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-sethtmlunsafe",
+          "tags": [
+            "web-features:parse-html-unsafe"
+          ],
           "support": {
             "chrome": {
               "version_added": "124"
@@ -650,7 +729,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -664,7 +744,7 @@
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ShadowRoot/slotAssignment",
           "spec_url": "https://dom.spec.whatwg.org/#dom-shadowroot-slotassignment",
           "tags": [
-            "web-features:slot"
+            "web-features:slot-assign"
           ],
           "support": {
             "chrome": {
@@ -687,7 +767,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -700,6 +781,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ShadowRoot/styleSheets",
           "spec_url": "https://drafts.csswg.org/cssom/#dom-documentorshadowroot-stylesheets",
+          "tags": [
+            "web-features:css-object-model"
+          ],
           "support": {
             "chrome": {
               "version_added": "53"
@@ -721,7 +805,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

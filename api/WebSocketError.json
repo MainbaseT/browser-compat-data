@@ -3,7 +3,7 @@
     "WebSocketError": {
       "__compat": {
         "tags": [
-          "web-features:web-features:web-socket-stream"
+          "web-features:websockets"
         ],
         "support": {
           "chrome": {
@@ -26,7 +26,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": true,
@@ -36,9 +37,9 @@
       },
       "WebSocketError": {
         "__compat": {
-          "description": "<code>WebSocketError()</code> constructor",
+          "description": "`WebSocketError()` constructor",
           "tags": [
-            "web-features:web-features:web-socket-stream"
+            "web-features:websockets"
           ],
           "support": {
             "chrome": {
@@ -61,7 +62,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -73,7 +75,7 @@
       "closeCode": {
         "__compat": {
           "tags": [
-            "web-features:web-features:web-socket-stream"
+            "web-features:websockets"
           ],
           "support": {
             "chrome": {
@@ -96,7 +98,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -108,7 +111,7 @@
       "reason": {
         "__compat": {
           "tags": [
-            "web-features:web-features:web-socket-stream"
+            "web-features:websockets"
           ],
           "support": {
             "chrome": {
@@ -131,7 +134,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,

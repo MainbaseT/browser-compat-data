@@ -2,6 +2,9 @@
   "api": {
     "Counter": {
       "__compat": {
+        "tags": [
+          "web-features:css-object-model-discouraged"
+        ],
         "support": {
           "chrome": {
             "version_added": "1",
@@ -27,7 +30,8 @@
             "version_added": "1"
           },
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -37,6 +41,9 @@
       },
       "identifier": {
         "__compat": {
+          "tags": [
+            "web-features:css-object-model-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -62,7 +69,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -73,6 +81,9 @@
       },
       "listStyle": {
         "__compat": {
+          "tags": [
+            "web-features:css-object-model-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -98,7 +109,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -109,6 +121,9 @@
       },
       "separator": {
         "__compat": {
+          "tags": [
+            "web-features:css-object-model-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -134,7 +149,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

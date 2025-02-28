@@ -2,6 +2,9 @@
   "api": {
     "Rect": {
       "__compat": {
+        "tags": [
+          "web-features:css-object-model-discouraged"
+        ],
         "support": {
           "chrome": {
             "version_added": "1",
@@ -27,7 +30,8 @@
             "version_added": "1"
           },
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -37,6 +41,9 @@
       },
       "bottom": {
         "__compat": {
+          "tags": [
+            "web-features:css-object-model-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -62,7 +69,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -73,6 +81,9 @@
       },
       "left": {
         "__compat": {
+          "tags": [
+            "web-features:css-object-model-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -98,7 +109,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -109,6 +121,9 @@
       },
       "right": {
         "__compat": {
+          "tags": [
+            "web-features:css-object-model-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -134,7 +149,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -145,6 +161,9 @@
       },
       "top": {
         "__compat": {
+          "tags": [
+            "web-features:css-object-model-discouraged"
+          ],
           "support": {
             "chrome": {
               "version_added": "1",
@@ -170,7 +189,8 @@
               "version_added": "1"
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
